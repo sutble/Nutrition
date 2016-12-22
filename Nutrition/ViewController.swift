@@ -14,41 +14,49 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var foodArray = ["Chole Rice", "Chicken with Rice/Vegetables", "Turkey Sandwich"]
     var filteredArray = [String]()
-    
+    let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+    var searchActivated : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBarSetup()
+        
     }
     
     //MARK: - Search Bar
     
     func searchBarSetup(){
-        let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 70))
-        searchBar.showsScopeBar = true
-        searchBar.scopeButtonTitles = ["protein","carbs","fat"]
+        
         searchBar.delegate = self
-        searchBar.selectedScopeButtonIndex = 0
         tableView.tableHeaderView = searchBar
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        if(searchText.isEmpty){
-            foodArray = ["Chole Rice", "Chicken with Rice/Vegetables", "Turkey Sandwich"]
-        }
-        
-        foodArray = foodArray.filter { foodItem in
+        filteredArray = foodArray.filter { foodItem in
             return foodItem.lowercased().contains(searchText.lowercased())
+        }
+        if filteredArray.count == 0 {
+            searchActivated = false
+        }
+        else {
+            searchActivated = true
         }
         tableView.reloadData()
     }
+    
+    
     
     //MARK: - Table View
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        if(searchActivated){
+            return filteredArray.count
+        }
+        else{
         return foodArray.count
+        }
     }
     
     
@@ -57,7 +65,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = foodArray[indexPath.row]
+        if(searchActivated){
+            cell.textLabel?.text = filteredArray[indexPath.row]
+        }
+        else{
+            cell.textLabel?.text = foodArray[indexPath.row]
+        }
+        
         return cell
         
     }

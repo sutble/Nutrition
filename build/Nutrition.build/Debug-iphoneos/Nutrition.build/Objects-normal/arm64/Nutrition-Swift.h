@@ -142,6 +142,8 @@ SWIFT_CLASS("_TtC9Nutrition14ViewController")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull foodArray;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull filteredArray;
+@property (nonatomic, readonly, strong) UISearchBar * _Nonnull searchBar;
+@property (nonatomic) BOOL searchActivated;
 - (void)viewDidLoad;
 - (void)searchBarSetup;
 - (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
