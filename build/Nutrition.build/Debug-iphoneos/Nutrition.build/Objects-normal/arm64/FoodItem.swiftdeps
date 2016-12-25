@@ -1,0 +1,210 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FoodItem"
+provides-nominal:
+- "C9Nutrition8FoodItem"
+provides-member:
+- ["C9Nutrition8FoodItem", ""]
+provides-dynamic-lookup:
+- "name"
+depends-top-level:
+- "String"
+- "AssignmentPrecedence"
+- "Double"
+- !private "StringLiteralType"
+- !private "print"
+- "FoodItem"
+- "NSObject"
+depends-member:
+- ["Ps9AnyObject", "calories"]
+- ["Ps9AnyObject", "carbs"]
+- ["Ps9AnyObject", "fat"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "protein"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "calories"]
+- ["Ps7CVarArg", "carbs"]
+- ["Ps7CVarArg", "fat"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "protein"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "calories"]
+- ["Ps28CustomDebugStringConvertible", "carbs"]
+- ["Ps28CustomDebugStringConvertible", "fat"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "protein"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "calories"]
+- ["Ps23CustomStringConvertible", "carbs"]
+- ["Ps23CustomStringConvertible", "fat"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "protein"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "calories"]
+- ["Ps9Equatable", "carbs"]
+- ["Ps9Equatable", "fat"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "protein"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["C9Nutrition8FoodItem", "Double"]
+- ["C9Nutrition8FoodItem", "String"]
+- ["C9Nutrition8FoodItem", "calories"]
+- ["C9Nutrition8FoodItem", "carbs"]
+- ["C9Nutrition8FoodItem", "deinit"]
+- ["C9Nutrition8FoodItem", "fat"]
+- ["C9Nutrition8FoodItem", "init"]
+- ["C9Nutrition8FoodItem", "name"]
+- !private ["C9Nutrition8FoodItem", "print"]
+- ["C9Nutrition8FoodItem", "protein"]
+- ["Ps8Hashable", "calories"]
+- ["Ps8Hashable", "carbs"]
+- ["Ps8Hashable", "fat"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "protein"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "calories"]
+- ["CSo8NSObject", "carbs"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "fat"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "protein"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "calories"]
+- ["PSo16NSObjectProtocol", "carbs"]
+- ["PSo16NSObjectProtocol", "fat"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "protein"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "calories"]
+- ["Ps9_Hashable", "carbs"]
+- ["Ps9_Hashable", "fat"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "protein"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "C9Nutrition8FoodItem"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/StateOfMind/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Firebase/Core/Sources/Firebase.h"
+interface-hash: "f5b9846ab4cec0202a4d7c16ea3b5645"

@@ -1,6 +1,8 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "4c7d686e651a79c3c2d51089a35407ca"
-build_time: [535712971, 215600000]
+options: "108a00fe12600da6baa56b8a518d89c6"
+build_time: [535947449, 999835000]
 inputs:
-  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/ViewController.swift": [535712969, 0]
-  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/AppDelegate.swift": [535700494, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/ViewController.swift": [535947443, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/FoodItem.swift": [535860675, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/AddViewController.swift": [535887964, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/AppDelegate.swift": [535754220, 0]

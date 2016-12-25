@@ -1,0 +1,70 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Pods_Nutrition.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Nutrition-umbrella.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Pods-Nutrition/Pods-Nutrition-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Nutrition-Swift.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Pods_Nutrition.framework/Headers/Pods_Nutrition-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Pods_Nutrition.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Pods-Nutrition.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

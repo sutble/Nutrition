@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "6880be6e3dbca8c25abb3d5f6d366eef"
+build_time: [535759462, 152669000]
+inputs:
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/ViewController.swift": !dirty [535759461, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/FoodItem.swift": !dirty [535757462, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Nutrition/AppDelegate.swift": [535754220, 0]

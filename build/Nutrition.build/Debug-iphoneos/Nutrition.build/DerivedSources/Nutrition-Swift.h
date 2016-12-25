@@ -111,11 +111,39 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 @import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class FIRDatabaseReference;
+@class NSUserDefaults;
+@class UITextField;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9Nutrition17AddViewController")
+@interface AddViewController : UIViewController
+@property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
+@property (nonatomic, strong) NSUserDefaults * _Nullable defaults;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameText;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified proteinText;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified carbsText;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fatText;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified caloriesText;
+- (void)viewDidLoad;
+- (void)dismissKeyboard;
+- (IBAction)updateToFB:(id _Nonnull)sender;
+- (void)setDefaults;
+- (void)startTheDayRight;
+- (void)addFood;
+- (void)ifelseblock;
+- (NSString * _Nonnull)stringDate;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -131,24 +159,39 @@ SWIFT_CLASS("_TtC9Nutrition11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC9Nutrition8FoodItem")
+@interface FoodItem : NSObject
+@property (nonatomic, copy) NSString * _Nullable name;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name protein:(double)protein carbs:(double)carbs fat:(double)fat calories:(double)calories OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UISearchBar;
 @class UITableView;
 @class UITableViewCell;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9Nutrition14ViewController")
 @interface ViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull foodArray;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull filteredArray;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull mainDict;
+@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull foodArray;
+@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull filteredArray;
 @property (nonatomic, readonly, strong) UISearchBar * _Nonnull searchBar;
 @property (nonatomic) BOOL searchActivated;
 - (void)viewDidLoad;
 - (void)searchBarSetup;
 - (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)populateTableView;
+- (NSString * _Nonnull)stringDate;
+- (void)populateDummyData;
+- (void)addFoodtoDBWithFoodName:(NSString * _Nonnull)foodName;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
