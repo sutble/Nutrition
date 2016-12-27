@@ -8,4 +8,5 @@ target 'Nutrition' do
   # Pods for Nutrition
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'Charts'
 end

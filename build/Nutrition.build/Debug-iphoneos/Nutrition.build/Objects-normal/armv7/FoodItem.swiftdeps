@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "name"
 depends-top-level:
-- "AssignmentPrecedence"
 - "Double"
-- "NSObject"
-- "FoodItem"
+- "AssignmentPrecedence"
 - "String"
-- !private "print"
+- "NSObject"
 - !private "StringLiteralType"
+- !private "print"
+- "FoodItem"
 depends-member:
 - ["Ps9AnyObject", "calories"]
 - ["Ps9AnyObject", "carbs"]
@@ -207,4 +207,8 @@ depends-external:
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Modules/Charts.swiftmodule/arm.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Modules/module.modulemap"
 interface-hash: "f5b9846ab4cec0202a4d7c16ea3b5645"

@@ -1,0 +1,196 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewPortJob"
+provides-nominal:
+- "C6Charts11ViewPortJob"
+provides-member:
+- ["C6Charts11ViewPortJob", ""]
+provides-dynamic-lookup:
+- "viewPortHandler"
+- "doJob"
+- "point"
+- "xValue"
+- "yValue"
+- "transformer"
+- "view"
+depends-top-level:
+- "ViewPortHandler"
+- "AssignmentPrecedence"
+- !private "StringLiteralType"
+- "NSObject"
+- "Double"
+- "CGPoint"
+- "Transformer"
+- "ChartViewBase"
+- "ViewPortJob"
+depends-member:
+- ["Ps9AnyObject", "CGPoint"]
+- ["Ps9AnyObject", "doJob"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "point"]
+- ["Ps9AnyObject", "transformer"]
+- ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewPortHandler"]
+- ["Ps9AnyObject", "xValue"]
+- ["Ps9AnyObject", "yValue"]
+- ["Ps9AnyObject", ""]
+- ["VSC7CGPoint", "deinit"]
+- ["VSC7CGPoint", "init"]
+- ["Ps7CVarArg", "CGPoint"]
+- ["Ps7CVarArg", "doJob"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "point"]
+- ["Ps7CVarArg", "transformer"]
+- ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", "viewPortHandler"]
+- ["Ps7CVarArg", "xValue"]
+- ["Ps7CVarArg", "yValue"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts13ChartViewBase", "deinit"]
+- ["Ps28CustomDebugStringConvertible", "CGPoint"]
+- ["Ps28CustomDebugStringConvertible", "doJob"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "point"]
+- ["Ps28CustomDebugStringConvertible", "transformer"]
+- ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
+- ["Ps28CustomDebugStringConvertible", "xValue"]
+- ["Ps28CustomDebugStringConvertible", "yValue"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "CGPoint"]
+- ["Ps23CustomStringConvertible", "doJob"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "point"]
+- ["Ps23CustomStringConvertible", "transformer"]
+- ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewPortHandler"]
+- ["Ps23CustomStringConvertible", "xValue"]
+- ["Ps23CustomStringConvertible", "yValue"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "CGPoint"]
+- ["Ps9Equatable", "doJob"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "point"]
+- ["Ps9Equatable", "transformer"]
+- ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewPortHandler"]
+- ["Ps9Equatable", "xValue"]
+- ["Ps9Equatable", "yValue"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "CGPoint"]
+- ["Ps8Hashable", "doJob"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "point"]
+- ["Ps8Hashable", "transformer"]
+- ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewPortHandler"]
+- ["Ps8Hashable", "xValue"]
+- ["Ps8Hashable", "yValue"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "ChartViewBase"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Transformer"]
+- ["CSo8NSObject", "ViewPortHandler"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "doJob"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "point"]
+- ["CSo8NSObject", "transformer"]
+- ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewPortHandler"]
+- ["CSo8NSObject", "xValue"]
+- ["CSo8NSObject", "yValue"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "CGPoint"]
+- ["PSo16NSObjectProtocol", "doJob"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "point"]
+- ["PSo16NSObjectProtocol", "transformer"]
+- ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewPortHandler"]
+- ["PSo16NSObjectProtocol", "xValue"]
+- ["PSo16NSObjectProtocol", "yValue"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["C6Charts11Transformer", "deinit"]
+- ["Su", "deinit"]
+- ["C6Charts15ViewPortHandler", "deinit"]
+- ["C6Charts11ViewPortJob", "CGPoint"]
+- ["C6Charts11ViewPortJob", "ChartViewBase"]
+- ["C6Charts11ViewPortJob", "Double"]
+- ["C6Charts11ViewPortJob", "Transformer"]
+- ["C6Charts11ViewPortJob", "ViewPortHandler"]
+- ["C6Charts11ViewPortJob", "deinit"]
+- ["C6Charts11ViewPortJob", "doJob"]
+- ["C6Charts11ViewPortJob", "init"]
+- ["C6Charts11ViewPortJob", "point"]
+- ["C6Charts11ViewPortJob", "transformer"]
+- ["C6Charts11ViewPortJob", "view"]
+- ["C6Charts11ViewPortJob", "viewPortHandler"]
+- ["C6Charts11ViewPortJob", "xValue"]
+- ["C6Charts11ViewPortJob", "yValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps9_Hashable", "CGPoint"]
+- ["Ps9_Hashable", "doJob"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "point"]
+- ["Ps9_Hashable", "transformer"]
+- ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", "viewPortHandler"]
+- ["Ps9_Hashable", "xValue"]
+- ["Ps9_Hashable", "yValue"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "VSC7CGPoint"
+- "Ps7CVarArg"
+- "C6Charts13ChartViewBase"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Os5Never"
+- "Sq"
+- "Vs12StaticString"
+- "C6Charts11Transformer"
+- "Su"
+- "C6Charts15ViewPortHandler"
+- "C6Charts11ViewPortJob"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "162878edbf9f1cfcdd8eba6872d717b4"

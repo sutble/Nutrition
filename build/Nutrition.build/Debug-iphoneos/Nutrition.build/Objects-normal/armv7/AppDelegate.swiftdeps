@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C9Nutrition11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
-- "application"
-- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "window"
 - "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "applicationWillEnterForeground"
+- "application"
 depends-top-level:
-- "UIApplicationDelegate"
-- "UIWindow"
-- "UIResponder"
 - "Bool"
-- "UIApplication"
+- "UIWindow"
+- "UIApplicationDelegate"
+- "UIResponder"
 - "UIApplicationLaunchOptionsKey"
 - "AppDelegate"
-- !private "BooleanLiteralType"
 - !private "FIRApp"
+- !private "BooleanLiteralType"
+- "UIApplication"
 depends-member:
 - !private ["Ps9AnyObject", "FIRApp"]
 - ["Ps9AnyObject", "application"]
@@ -316,4 +316,8 @@ depends-external:
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Modules/Charts.swiftmodule/arm.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Modules/module.modulemap"
 interface-hash: "b47ac0d97540aaf50680d0790fa3b4b1"

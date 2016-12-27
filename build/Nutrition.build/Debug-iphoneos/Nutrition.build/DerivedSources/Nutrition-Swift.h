@@ -111,6 +111,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Charts;
+@import CoreGraphics;
 @import ObjectiveC;
 @import Foundation;
 #endif
@@ -164,6 +166,38 @@ SWIFT_CLASS("_TtC9Nutrition11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UIColor;
+@class PieChartView;
+
+SWIFT_CLASS("_TtC9Nutrition19ChartViewController")
+@interface ChartViewController : UIViewController <ChartViewDelegate>
+@property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChart;
+@property (nonatomic, strong) UIButton * _Nonnull resetButton;
+@property (nonatomic, strong) UIButton * _Nonnull feelingButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+- (void)viewDidLoad;
+- (void)dismissKeyboard;
+- (void)updateFromFB;
+- (void)resetFunc;
+- (void)feelingFunc;
+- (void)successHaptic;
+- (void)findFontNames;
+- (NSArray<NSNumber *> * _Nonnull)setMacroValsWithProtein:(double)protein carbs:(double)carbs fat:(double)fat calories:(double)calories;
+- (void)setMacroLabels;
+- (void)drawKeyWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
+- (void)drawLabelWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
+- (void)drawCenterXWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos;
+- (void)setChartWithVals:(NSArray<NSNumber *> * _Nonnull)vals;
+- (void)pformatterStuff;
+- (NSArray<UIColor *> * _Nonnull)setColors;
+- (void)setCenterWithCalories:(NSInteger)calories;
+- (void)setDescriptionWithText:(NSString * _Nonnull)text;
+- (NSString * _Nonnull)stringDate;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9Nutrition8FoodItem")
 @interface FoodItem : NSObject
@@ -191,6 +225,15 @@ SWIFT_CLASS("_TtC9Nutrition14ViewController")
 - (NSString * _Nonnull)stringDate;
 - (void)populateDummyData;
 - (void)addFoodtoDBWithFoodName:(NSString * _Nonnull)foodName;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9Nutrition18textViewController")
+@interface textViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

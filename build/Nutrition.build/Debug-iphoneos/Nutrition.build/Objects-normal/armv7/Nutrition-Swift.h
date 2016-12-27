@@ -111,6 +111,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Charts;
+@import CoreGraphics;
 @import ObjectiveC;
 @import Foundation;
 #endif
@@ -119,6 +121,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class FIRDatabaseReference;
 @class NSUserDefaults;
+@class UISearchController;
 @class UITextField;
 @class NSBundle;
 @class NSCoder;
@@ -127,19 +130,23 @@ SWIFT_CLASS("_TtC9Nutrition17AddViewController")
 @interface AddViewController : UIViewController
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 @property (nonatomic, strong) NSUserDefaults * _Nullable defaults;
+@property (nonatomic, strong) UISearchController * _Null_unspecified resultSearchController;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified proteinText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified carbsText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fatText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified caloriesText;
 - (void)viewDidLoad;
-- (void)dismissKeyboard;
 - (IBAction)updateToFB:(id _Nonnull)sender;
 - (void)setDefaults;
 - (void)startTheDayRight;
 - (void)addFood;
-- (void)ifelseblock;
 - (NSString * _Nonnull)stringDate;
+- (void)setDecimalPad;
+- (void)tapDismiss;
+- (void)setupSearchController;
+- (void)clearTextfield;
+- (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -159,6 +166,37 @@ SWIFT_CLASS("_TtC9Nutrition11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UIColor;
+@class PieChartView;
+
+SWIFT_CLASS("_TtC9Nutrition19ChartViewController")
+@interface ChartViewController : UIViewController <ChartViewDelegate>
+@property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChart;
+@property (nonatomic, strong) UIButton * _Nonnull updateButton;
+@property (nonatomic, strong) UIButton * _Nonnull resetButton;
+@property (nonatomic, strong) UIButton * _Nonnull feelingButton;
+- (void)viewDidLoad;
+- (void)dismissKeyboard;
+- (void)updateFunc;
+- (void)resetFunc;
+- (void)feelingFunc;
+- (void)successHaptic;
+- (void)findFontNames;
+- (NSArray<NSNumber *> * _Nonnull)setMacroValsWithProtein:(double)protein carbs:(double)carbs fat:(double)fat;
+- (void)setMacroLabels;
+- (void)drawKeyWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
+- (void)drawLabelWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
+- (void)drawCenterXWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos;
+- (void)setChartWithVals:(NSArray<NSNumber *> * _Nonnull)vals calories:(NSInteger)calories;
+- (void)pformatterStuff;
+- (NSArray<UIColor *> * _Nonnull)setColors;
+- (void)setCenterWithCalories:(NSInteger)calories;
+- (void)setDescriptionWithText:(NSString * _Nonnull)text;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9Nutrition8FoodItem")
 @interface FoodItem : NSObject
@@ -167,24 +205,18 @@ SWIFT_CLASS("_TtC9Nutrition8FoodItem")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISearchBar;
 @class UITableView;
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC9Nutrition14ViewController")
-@interface ViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull mainDict;
 @property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull foodArray;
 @property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull filteredArray;
-@property (nonatomic, readonly, strong) UISearchBar * _Nonnull searchBar;
-@property (nonatomic) BOOL searchActivated;
 - (void)viewDidLoad;
-- (void)searchBarSetup;
-- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
-- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
-- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
+- (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

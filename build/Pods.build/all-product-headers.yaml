@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Charts-Swift.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Charts-umbrella.h",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/Charts/Charts.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {

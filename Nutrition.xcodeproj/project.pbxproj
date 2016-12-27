@@ -12,9 +12,19 @@
 		182DE67D1E0B9F0E000C24D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DE67B1E0B9F0E000C24D2 /* Main.storyboard */; };
 		182DE67F1E0B9F0E000C24D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */; };
 		182DE6821E0B9F0E000C24D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DE6801E0B9F0E000C24D2 /* LaunchScreen.storyboard */; };
+		182EE45F1E1308E400ABC0DD /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EE45E1E1308E400ABC0DD /* ChartViewController.swift */; };
+		182EE4681E13117C00ABC0DD /* darkBluePattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4601E13117C00ABC0DD /* darkBluePattern.png */; };
+		182EE4691E13117C00ABC0DD /* lightBluePatternShaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4611E13117C00ABC0DD /* lightBluePatternShaded.png */; };
+		182EE46A1E13117C00ABC0DD /* darkBlueLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4621E13117C00ABC0DD /* darkBlueLabel.png */; };
+		182EE46B1E13117C00ABC0DD /* lightBlueLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4631E13117C00ABC0DD /* lightBlueLabel.png */; };
+		182EE46C1E13117C00ABC0DD /* orangeLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4641E13117C00ABC0DD /* orangeLabel.png */; };
+		182EE46D1E13117C00ABC0DD /* xmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4651E13117C00ABC0DD /* xmarks.png */; };
+		182EE46E1E13117C00ABC0DD /* orangePatternShaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4661E13117C00ABC0DD /* orangePatternShaded.png */; };
+		182EE46F1E13117C00ABC0DD /* SubwayLogo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */; };
 		186CF0501E0DB0150059EAF3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CF04F1E0DB0150059EAF3 /* AddViewController.swift */; };
 		186F237A1E0C701E006311A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186F23791E0C701E006311A7 /* GoogleService-Info.plist */; };
 		18E4511A1E0BD5C300F1330E /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E451191E0BD5C300F1330E /* FoodItem.swift */; };
+		18F6303E1E13373800EF7D1E /* textViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6303D1E13373800EF7D1E /* textViewController.swift */; };
 		CA8A62F8524FE82C83C66EE3 /* Pods_Nutrition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A842AF68C2D137D6E7BD807 /* Pods_Nutrition.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,10 +36,20 @@
 		182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182DE6811E0B9F0E000C24D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182DE6831E0B9F0E000C24D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182EE45E1E1308E400ABC0DD /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		182EE4601E13117C00ABC0DD /* darkBluePattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBluePattern.png; sourceTree = "<group>"; };
+		182EE4611E13117C00ABC0DD /* lightBluePatternShaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBluePatternShaded.png; sourceTree = "<group>"; };
+		182EE4621E13117C00ABC0DD /* darkBlueLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBlueLabel.png; sourceTree = "<group>"; };
+		182EE4631E13117C00ABC0DD /* lightBlueLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBlueLabel.png; sourceTree = "<group>"; };
+		182EE4641E13117C00ABC0DD /* orangeLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeLabel.png; sourceTree = "<group>"; };
+		182EE4651E13117C00ABC0DD /* xmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmarks.png; sourceTree = "<group>"; };
+		182EE4661E13117C00ABC0DD /* orangePatternShaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePatternShaded.png; sourceTree = "<group>"; };
+		182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SubwayLogo.ttf; sourceTree = "<group>"; };
 		186CF04F1E0DB0150059EAF3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		186CF0511E0F1AF90059EAF3 /* Nutrition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nutrition.entitlements; sourceTree = "<group>"; };
 		186F23791E0C701E006311A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18E451191E0BD5C300F1330E /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		18F6303D1E13373800EF7D1E /* textViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textViewController.swift; sourceTree = "<group>"; };
 		2B74A1F715AAE71136BC241C /* Pods-Nutrition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrition/Pods-Nutrition.release.xcconfig"; sourceTree = "<group>"; };
 		4A842AF68C2D137D6E7BD807 /* Pods_Nutrition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2B9EBED1963D8A88CA8CC0 /* Pods-Nutrition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrition/Pods-Nutrition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +105,8 @@
 		182DE6761E0B9F0E000C24D2 /* Nutrition */ = {
 			isa = PBXGroup;
 			children = (
+				182EE45E1E1308E400ABC0DD /* ChartViewController.swift */,
+				18F6303D1E13373800EF7D1E /* textViewController.swift */,
 				186CF0511E0F1AF90059EAF3 /* Nutrition.entitlements */,
 				182DE6771E0B9F0E000C24D2 /* AppDelegate.swift */,
 				182DE6791E0B9F0E000C24D2 /* ViewController.swift */,
@@ -92,6 +114,14 @@
 				182DE67B1E0B9F0E000C24D2 /* Main.storyboard */,
 				186CF04F1E0DB0150059EAF3 /* AddViewController.swift */,
 				182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */,
+				182EE4601E13117C00ABC0DD /* darkBluePattern.png */,
+				182EE4611E13117C00ABC0DD /* lightBluePatternShaded.png */,
+				182EE4621E13117C00ABC0DD /* darkBlueLabel.png */,
+				182EE4631E13117C00ABC0DD /* lightBlueLabel.png */,
+				182EE4641E13117C00ABC0DD /* orangeLabel.png */,
+				182EE4651E13117C00ABC0DD /* xmarks.png */,
+				182EE4661E13117C00ABC0DD /* orangePatternShaded.png */,
+				182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */,
 				182DE6801E0B9F0E000C24D2 /* LaunchScreen.storyboard */,
 				182DE6831E0B9F0E000C24D2 /* Info.plist */,
 				186F23791E0C701E006311A7 /* GoogleService-Info.plist */,
@@ -167,9 +197,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182EE46C1E13117C00ABC0DD /* orangeLabel.png in Resources */,
+				182EE46E1E13117C00ABC0DD /* orangePatternShaded.png in Resources */,
 				182DE6821E0B9F0E000C24D2 /* LaunchScreen.storyboard in Resources */,
 				186F237A1E0C701E006311A7 /* GoogleService-Info.plist in Resources */,
+				182EE4691E13117C00ABC0DD /* lightBluePatternShaded.png in Resources */,
+				182EE4681E13117C00ABC0DD /* darkBluePattern.png in Resources */,
+				182EE46A1E13117C00ABC0DD /* darkBlueLabel.png in Resources */,
+				182EE46B1E13117C00ABC0DD /* lightBlueLabel.png in Resources */,
+				182EE46D1E13117C00ABC0DD /* xmarks.png in Resources */,
 				182DE67F1E0B9F0E000C24D2 /* Assets.xcassets in Resources */,
+				182EE46F1E13117C00ABC0DD /* SubwayLogo.ttf in Resources */,
 				182DE67D1E0B9F0E000C24D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +270,9 @@
 				182DE67A1E0B9F0E000C24D2 /* ViewController.swift in Sources */,
 				18E4511A1E0BD5C300F1330E /* FoodItem.swift in Sources */,
 				186CF0501E0DB0150059EAF3 /* AddViewController.swift in Sources */,
+				18F6303E1E13373800EF7D1E /* textViewController.swift in Sources */,
 				182DE6781E0B9F0E000C24D2 /* AppDelegate.swift in Sources */,
+				182EE45F1E1308E400ABC0DD /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,258 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TriangleShapeRenderer"
+provides-nominal:
+- "C6Charts21TriangleShapeRenderer"
+provides-member:
+- ["C6Charts21TriangleShapeRenderer", ""]
+provides-dynamic-lookup:
+- "renderShape"
+depends-top-level:
+- !private "/"
+- "NSUIColor"
+- !private "+"
+- !private "&&"
+- "IScatterChartDataSet"
+- "ViewPortHandler"
+- !private "-"
+- !private ">"
+- "TriangleShapeRenderer"
+- !private "!="
+- "NSObject"
+- !private "*"
+- "CGPoint"
+- "IShapeRenderer"
+- "CGContext"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "addLine"]
+- !private ["Ps9AnyObject", "beginPath"]
+- !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "closePath"]
+- !private ["Ps9AnyObject", "fillPath"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "move"]
+- ["Ps9AnyObject", "renderShape"]
+- !private ["Ps9AnyObject", "setFillColor"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["CSo7CGColor", "deinit"]
+- !private ["CSo9CGContext", "addLine"]
+- !private ["CSo9CGContext", "beginPath"]
+- !private ["CSo9CGContext", "closePath"]
+- ["CSo9CGContext", "deinit"]
+- !private ["CSo9CGContext", "fillPath"]
+- !private ["CSo9CGContext", "move"]
+- !private ["CSo9CGContext", "setFillColor"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["Ps7CVarArg", "CGPoint"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "renderShape"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "renderShape"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps17CustomReflectable", "y"]
+- !private ["Ps23CustomStringConvertible", "CGPoint"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "renderShape"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGPoint"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "cgColor"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "renderShape"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps8Hashable", "CGPoint"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "cgColor"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "renderShape"]
+- ["Ps8Hashable", ""]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeHoleColor"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeHoleRadius"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeSize"]
+- !private ["P6Charts13IChartDataSet", "scatterShapeHoleColor"]
+- !private ["P6Charts13IChartDataSet", "scatterShapeHoleRadius"]
+- !private ["P6Charts13IChartDataSet", "scatterShapeSize"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeHoleColor"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeHoleRadius"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeSize"]
+- ["P6Charts20IScatterChartDataSet", "deinit"]
+- !private ["P6Charts20IScatterChartDataSet", "scatterShapeHoleColor"]
+- !private ["P6Charts20IScatterChartDataSet", "scatterShapeHoleRadius"]
+- !private ["P6Charts20IScatterChartDataSet", "scatterShapeSize"]
+- !private ["P6Charts14IShapeRenderer", "CGPoint"]
+- ["P6Charts14IShapeRenderer", "renderShape"]
+- ["P6Charts14IShapeRenderer", ""]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["PSo8NSCoding", "cgColor"]
+- !private ["PSo9NSCopying", "cgColor"]
+- ["CSo8NSObject", "CGContext"]
+- ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "IScatterChartDataSet"]
+- ["CSo8NSObject", "NSUIColor"]
+- ["CSo8NSObject", "ViewPortHandler"]
+- !private ["CSo8NSObject", "cgColor"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "renderShape"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "CGPoint"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "renderShape"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "cgColor"]
+- ["Sq", "deinit"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps10Strideable", "Stride"]
+- ["C6Charts21TriangleShapeRenderer", "CGContext"]
+- ["C6Charts21TriangleShapeRenderer", "CGPoint"]
+- ["C6Charts21TriangleShapeRenderer", "IScatterChartDataSet"]
+- ["C6Charts21TriangleShapeRenderer", "NSUIColor"]
+- ["C6Charts21TriangleShapeRenderer", "ViewPortHandler"]
+- ["C6Charts21TriangleShapeRenderer", "deinit"]
+- ["C6Charts21TriangleShapeRenderer", "init"]
+- ["C6Charts21TriangleShapeRenderer", "renderShape"]
+- !private ["CSo7UIColor", "cgColor"]
+- ["CSo7UIColor", "deinit"]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- !private ["Ps9_Hashable", "CGPoint"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "cgColor"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "renderShape"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "Stride"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "CSo7CGColor"
+- "CSo9CGContext"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- !private "P6Charts13IChartDataSet"
+- !private "P6Charts35ILineScatterCandleRadarChartDataSet"
+- "P6Charts20IScatterChartDataSet"
+- "P6Charts14IShapeRenderer"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Sq"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "C6Charts21TriangleShapeRenderer"
+- "CSo7UIColor"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+interface-hash: "66374aafe515cd1b3108147125983a59"
