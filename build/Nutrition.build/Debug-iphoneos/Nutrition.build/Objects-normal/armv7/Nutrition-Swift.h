@@ -175,7 +175,7 @@ SWIFT_CLASS("_TtC9Nutrition14ViewController")
 @interface ViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
-@property (nonatomic, strong) NSUserDefaults * _Nullable defaults;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull mainDict;
 @property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull foodArray;
 @property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull filteredArray;
 @property (nonatomic, readonly, strong) UISearchBar * _Nonnull searchBar;

@@ -14,6 +14,7 @@ class AddViewController: UIViewController {
     var ref : FIRDatabaseReference?
     var refHandle:FIRDatabaseHandle?
     var defaults : UserDefaults?
+    var resultSearchController : UISearchController!
 
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var proteinText: UITextField!
@@ -27,21 +28,10 @@ class AddViewController: UIViewController {
         ref = FIRDatabase.database().reference()
         defaults = UserDefaults.standard
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-        
-        proteinText.keyboardType = UIKeyboardType.decimalPad
-        carbsText.keyboardType = UIKeyboardType.decimalPad
-        fatText.keyboardType = UIKeyboardType.decimalPad
-        caloriesText.keyboardType = UIKeyboardType.decimalPad
+        tapDismiss()
+        setDecimalPad()
+        setupSearchController()
     }
-    
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-
     
     @IBAction func updateToFB(_ sender: AnyObject) {
         
@@ -50,7 +40,8 @@ class AddViewController: UIViewController {
         
             ref?.child(stringDate()).child("Body").child("Nutrition").observeSingleEvent(of: .value, with: {(snapshot) in
                 if let dictionary = snapshot.value as? [String : AnyObject] {
-
+                    print("dict")
+                    print(dictionary)
                     let protein : Double = dictionary["protein"] as! Double
                     let carbs : Double = dictionary["carbs"] as! Double
                     let fat : Double = dictionary["fat"] as! Double
@@ -61,10 +52,12 @@ class AddViewController: UIViewController {
                     self.ref?.child(self.stringDate()).child("Body").child("Nutrition").child("fat").setValue(fat + (self.fatText.text as! NSString).doubleValue)
                     self.ref?.child(self.stringDate()).child("Body").child("Nutrition").child("calories").setValue(calories + (self.caloriesText.text as! NSString).doubleValue)
                     self.addFood()
+                    self.clearTextfield()
                 }
                 else{ //init the day with first values and food to DB
                     self.startTheDayRight()
                     self.addFood()
+                    self.clearTextfield()
                 }
             })
         }
@@ -91,13 +84,6 @@ class AddViewController: UIViewController {
         self.ref?.child("Misc").child("Nutrition").child(self.nameText.text!).child("calories").setValue((self.caloriesText.text as! NSString).doubleValue)
     }
     
-    func ifelseblock(){ //this works
-        
-            
-            
-        
-    }
-    
     //MARK: - Helper Functions
     func stringDate() -> String{
         let calendar = Calendar(identifier: .gregorian)
@@ -114,6 +100,42 @@ class AddViewController: UIViewController {
             return "\(month!)" + ":" + "\(day!)" + ":" + "\(year!)"
         }
     }
+    
+    func setDecimalPad(){
+        proteinText.keyboardType = UIKeyboardType.decimalPad
+        carbsText.keyboardType = UIKeyboardType.decimalPad
+        fatText.keyboardType = UIKeyboardType.decimalPad
+        caloriesText.keyboardType = UIKeyboardType.decimalPad
+    }
+    
+    func tapDismiss(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func setupSearchController(){
+        let tbvc = self.storyboard?.instantiateViewController(withIdentifier: "tableViewHere")
+        self.resultSearchController = UISearchController(searchResultsController: tbvc)
+        self.resultSearchController.searchResultsUpdater = tbvc as! UISearchResultsUpdating?
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        self.resultSearchController.searchBar.sizeToFit()
+        self.view.addSubview(self.resultSearchController.searchBar)
+    }
+    
+    func clearTextfield(){
+        self.nameText.text = ""
+        self.fatText.text = ""
+        self.proteinText.text = ""
+        self.carbsText.text = ""
+        self.caloriesText.text = ""
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
 
         
         

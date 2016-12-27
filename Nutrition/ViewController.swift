@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
 
     @IBOutlet weak var tableView: UITableView!
     var ref : FIRDatabaseReference!
@@ -19,13 +19,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var foodArray = [FoodItem]()
     var filteredArray = [FoodItem]()
-    let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
-    var searchActivated : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
-        searchBarSetup()
         populateTableView()
     }
     
@@ -33,38 +30,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //MARK: - Search Bar
     
-    func searchBarSetup(){
-        searchBar.delegate = self
-        tableView.tableHeaderView = searchBar
+    func updateSearchResults(for searchController: UISearchController) {
+        print("searchTable")
+        searchController.searchResultsController?.view.isHidden = false
+        self.filteredArray.removeAll(keepingCapacity: false)
+        self.filteredArray = self.foodArray.filter { foodItem in
+            return foodItem.name!.lowercased().contains(searchController.searchBar.text!.lowercased())
+        }
+        print(self.filteredArray)
+        self.tableView.reloadData()
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredArray = foodArray.filter { foodItem in
-            return foodItem.name!.lowercased().contains(searchText.lowercased())
-        }
-        
-        if (filteredArray.count == 0) {  //EMPTY (get rid of this)
-            if(searchBar.text == ""){
-                searchActivated = false
-            }
-        }
-        else {
-            searchActivated = true
-        }
-        tableView.reloadData()
-    }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.endEditing(true)
-        searchBar.text = ""
-        searchBar.showsCancelButton = false
-        searchActivated = false   //EMPTY (get rid of these two lines of code
-        tableView.reloadData()
-    }
     
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchBar.showsCancelButton = true
-    }
+    
     
     
     
@@ -73,12 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        if(searchActivated){
-            return filteredArray.count  //EMPTY always return filteredArray
-        }
-        else{
-        return foodArray.count
-        }
+       return filteredArray.count
     }
     
     
@@ -87,24 +61,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        if(searchActivated){ //EMPTY (always return filteredArray)
-            cell.textLabel?.text = filteredArray[indexPath.row].name
-        }
-        else{
-            cell.textLabel?.text = foodArray[indexPath.row].name
-        }
+        cell.textLabel?.text = filteredArray[indexPath.row].name!
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(searchActivated){
-            print(filteredArray[indexPath.row].name) //EMPTY (always return filteredArray)
             addFoodtoDB(foodName: filteredArray[indexPath.row].name!)
-        }
-        else{
-            print(foodArray[indexPath.row].name)
-            addFoodtoDB(foodName: foodArray[indexPath.row].name!)
-        }
     }
     
     func populateTableView(){

@@ -6,59 +6,60 @@ provides-nominal:
 provides-member:
 - ["C9Nutrition14ViewController", ""]
 provides-dynamic-lookup:
-- "searchBarSetup"
-- "populateTableView"
-- "populateDummyData"
-- "searchActivated"
-- "filteredArray"
 - "stringDate"
-- "addFoodtoDB"
-- "searchBarTextDidBeginEditing"
-- "searchBarCancelButtonClicked"
-- "foodArray"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "searchBar"
-- "searchBar"
-- "defaults"
-- "ref"
+- "filteredArray"
+- "populateTableView"
 - "viewDidLoad"
+- "populateDummyData"
+- "searchBarCancelButtonClicked"
+- "searchActivated"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "searchBarTextDidBeginEditing"
+- "searchBarSetup"
+- "mainDict"
+- "foodArray"
+- "searchBar"
+- "searchBar"
+- "addFoodtoDB"
+- "ref"
 depends-top-level:
-- "UITableViewDelegate"
-- "BooleanLiteralType"
-- "UIViewController"
-- !private "FIRDatabase"
-- "UInt"
-- "UIScreen"
-- "Bool"
-- !private "Calendar"
-- !private "+"
-- "FIRDatabaseReference"
-- !private "NSNumber"
 - "String"
-- !private "Date"
-- "FoodItem"
-- "UISearchBarDelegate"
-- "CGRect"
-- "UISearchBar"
-- !private "StringLiteralType"
-- "UITableViewDataSource"
-- !private "DispatchQueue"
-- "UITableView"
-- !private "<"
-- !private "=="
-- "AssignmentPrecedence"
-- "Int"
+- !private "NSNumber"
+- "UITableViewDelegate"
+- "FIRDatabaseReference"
 - "UITableViewCell"
-- !private "CastingPrecedence"
+- "UIViewController"
+- "UInt"
+- "UISearchBarDelegate"
+- "UITableViewDataSource"
 - !private "print"
-- "ViewController"
-- !private "AnyObject"
-- "IndexPath"
-- "UserDefaults"
+- "Int"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- !private "<"
 - !private "UnicodeScalarType"
+- "FoodItem"
+- !private "Double"
+- "UISearchBar"
+- "Dictionary"
+- !private "Date"
+- "StringLiteralType"
+- "UITableView"
+- "Bool"
+- "AnyObject"
+- "IndexPath"
+- "UIScreen"
+- !private "DispatchQueue"
+- !private "+"
+- "BooleanLiteralType"
+- !private "FIRDatabase"
+- "ViewController"
+- !private "Calendar"
+- "CGRect"
 depends-member:
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "Calendar"]
@@ -69,14 +70,13 @@ depends-member:
 - ["Ps9AnyObject", "UIScreen"]
 - ["Ps9AnyObject", "UISearchBar"]
 - !private ["Ps9AnyObject", "UITableViewCell"]
-- !private ["Ps9AnyObject", "UserDefaults"]
 - ["Ps9AnyObject", "addFoodtoDB"]
 - !private ["Ps9AnyObject", "async"]
 - ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "contains"]
 - !private ["Ps9AnyObject", "database"]
-- ["Ps9AnyObject", "defaults"]
+- ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "doubleValue"]
 - !private ["Ps9AnyObject", "endEditing"]
@@ -87,6 +87,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lowercased"]
 - ["Ps9AnyObject", "main"]
+- ["Ps9AnyObject", "mainDict"]
 - !private ["Ps9AnyObject", "name"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -126,6 +127,7 @@ depends-member:
 - ["Ps9AnyObject", "searchBarTextDidEndEditing"]
 - ["Ps9AnyObject", "sectionIndexTitles"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "showsCancelButton"]
 - ["Ps9AnyObject", "stringDate"]
 - !private ["Ps9AnyObject", "tableHeaderView"]
@@ -205,12 +207,13 @@ depends-member:
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Iterator"]
+- ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - ["Ps7CVarArg", "UIScreen"]
 - ["Ps7CVarArg", "UISearchBar"]
 - !private ["Ps7CVarArg", "UITableViewCell"]
-- !private ["Ps7CVarArg", "UserDefaults"]
+- ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - ["Ps7CVarArg", "addFoodtoDB"]
@@ -221,7 +224,6 @@ depends-member:
 - !private ["Ps7CVarArg", "contains"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "database"]
-- ["Ps7CVarArg", "defaults"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "doubleValue"]
 - !private ["Ps7CVarArg", "endEditing"]
@@ -233,6 +235,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "lowercased"]
 - ["Ps7CVarArg", "main"]
+- ["Ps7CVarArg", "mainDict"]
 - !private ["Ps7CVarArg", "name"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
@@ -272,6 +275,7 @@ depends-member:
 - ["Ps7CVarArg", "searchBarTextDidEndEditing"]
 - ["Ps7CVarArg", "sectionIndexTitles"]
 - ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
+- !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "showsCancelButton"]
 - ["Ps7CVarArg", "stringDate"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -292,7 +296,9 @@ depends-member:
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Indices"]
 - !private ["Ps10Collection", "Iterator"]
+- ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "SubSequence"]
+- ["Ps10Collection", "Value"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
@@ -304,7 +310,7 @@ depends-member:
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "contains"]
-- !private ["Ps10Comparable", "init"]
+- ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "lowercased"]
 - !private ["Ps10Comparable", "row"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
@@ -316,11 +322,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - ["Ps28CustomDebugStringConvertible", "UISearchBar"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
-- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "addFoodtoDB"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
@@ -333,7 +340,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "dateComponents"]
 - !private ["Ps28CustomDebugStringConvertible", "day"]
-- ["Ps28CustomDebugStringConvertible", "defaults"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "doubleValue"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
@@ -345,6 +351,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "lowercased"]
 - ["Ps28CustomDebugStringConvertible", "main"]
+- ["Ps28CustomDebugStringConvertible", "mainDict"]
 - !private ["Ps28CustomDebugStringConvertible", "month"]
 - !private ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
@@ -386,6 +393,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "searchBarTextDidEndEditing"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "showsCancelButton"]
 - !private ["Ps28CustomDebugStringConvertible", "some"]
 - ["Ps28CustomDebugStringConvertible", "stringDate"]
@@ -413,8 +421,10 @@ depends-member:
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Iterator"]
+- ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
+- ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -443,12 +453,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
+- ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - ["Ps23CustomStringConvertible", "UIScreen"]
 - ["Ps23CustomStringConvertible", "UISearchBar"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
-- !private ["Ps23CustomStringConvertible", "UserDefaults"]
+- ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -463,7 +474,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "dateComponents"]
 - !private ["Ps23CustomStringConvertible", "day"]
-- ["Ps23CustomStringConvertible", "defaults"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "doubleValue"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
@@ -475,6 +485,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "lowercased"]
 - ["Ps23CustomStringConvertible", "main"]
+- ["Ps23CustomStringConvertible", "mainDict"]
 - !private ["Ps23CustomStringConvertible", "month"]
 - !private ["Ps23CustomStringConvertible", "name"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
@@ -516,6 +527,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "searchBarTextDidEndEditing"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitles"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "showsCancelButton"]
 - ["Ps23CustomStringConvertible", "stringDate"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -546,8 +558,10 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
 - !private ["Vs10Dictionary", "Index"]
+- ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "SubSequence"]
-- !private ["Vs10Dictionary", "deinit"]
+- ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["CSo14DispatchObject", "async"]
 - !private ["CSo14DispatchObject", "main"]
@@ -566,7 +580,6 @@ depends-member:
 - ["Ps9Equatable", "UIScreen"]
 - ["Ps9Equatable", "UISearchBar"]
 - !private ["Ps9Equatable", "UITableViewCell"]
-- !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addFoodtoDB"]
@@ -580,7 +593,6 @@ depends-member:
 - !private ["Ps9Equatable", "dateComponents"]
 - !private ["Ps9Equatable", "day"]
 - !private ["Ps9Equatable", "default"]
-- ["Ps9Equatable", "defaults"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "doubleValue"]
 - !private ["Ps9Equatable", "endEditing"]
@@ -592,6 +604,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "lowercased"]
 - ["Ps9Equatable", "main"]
+- ["Ps9Equatable", "mainDict"]
 - !private ["Ps9Equatable", "month"]
 - !private ["Ps9Equatable", "name"]
 - ["Ps9Equatable", "numberOfSections"]
@@ -633,6 +646,7 @@ depends-member:
 - ["Ps9Equatable", "searchBarTextDidEndEditing"]
 - ["Ps9Equatable", "sectionIndexTitles"]
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "showsCancelButton"]
 - ["Ps9Equatable", "stringDate"]
 - !private ["Ps9Equatable", "tableHeaderView"]
@@ -660,10 +674,12 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "doubleValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "contains"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lowercased"]
 - !private ["Ps25ExpressibleByFloatLiteral", "doubleValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
@@ -672,13 +688,13 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "doubleValue"]
 - !private ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "contains"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "lowercased"]
 - !private ["Ps26ExpressibleByStringLiteral", "contains"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "lowercased"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "contains"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "lowercased"]
 - !private ["OSC16FIRDataEventType", "childAdded"]
 - ["OSC16FIRDataEventType", "deinit"]
@@ -691,10 +707,12 @@ depends-member:
 - !private ["CSo16FIRDatabaseQuery", "child"]
 - !private ["CSo16FIRDatabaseQuery", "observe"]
 - !private ["CSo16FIRDatabaseQuery", "observeSingleEvent"]
+- !private ["CSo16FIRDatabaseQuery", "setValue"]
 - !private ["CSo20FIRDatabaseReference", "child"]
 - ["CSo20FIRDatabaseReference", "deinit"]
 - !private ["CSo20FIRDatabaseReference", "observe"]
 - !private ["CSo20FIRDatabaseReference", "observeSingleEvent"]
+- !private ["CSo20FIRDatabaseReference", "setValue"]
 - !private ["Sf", "deinit"]
 - ["C9Nutrition8FoodItem", "deinit"]
 - !private ["C9Nutrition8FoodItem", "init"]
@@ -710,7 +728,6 @@ depends-member:
 - ["Ps8Hashable", "UIScreen"]
 - ["Ps8Hashable", "UISearchBar"]
 - !private ["Ps8Hashable", "UITableViewCell"]
-- !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addFoodtoDB"]
@@ -724,7 +741,6 @@ depends-member:
 - !private ["Ps8Hashable", "dateComponents"]
 - !private ["Ps8Hashable", "day"]
 - !private ["Ps8Hashable", "default"]
-- ["Ps8Hashable", "defaults"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "doubleValue"]
 - !private ["Ps8Hashable", "endEditing"]
@@ -736,6 +752,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "lowercased"]
 - ["Ps8Hashable", "main"]
+- ["Ps8Hashable", "mainDict"]
 - !private ["Ps8Hashable", "month"]
 - !private ["Ps8Hashable", "name"]
 - ["Ps8Hashable", "numberOfSections"]
@@ -777,6 +794,7 @@ depends-member:
 - ["Ps8Hashable", "searchBarTextDidEndEditing"]
 - ["Ps8Hashable", "sectionIndexTitles"]
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "showsCancelButton"]
 - ["Ps8Hashable", "stringDate"]
 - !private ["Ps8Hashable", "tableHeaderView"]
@@ -798,7 +816,9 @@ depends-member:
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Indices"]
 - !private ["Ps9Indexable", "Iterator"]
+- ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
@@ -810,7 +830,9 @@ depends-member:
 - !private ["Ps13IndexableBase", "IndexDistance"]
 - !private ["Ps13IndexableBase", "Indices"]
 - !private ["Ps13IndexableBase", "Iterator"]
+- ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "SubSequence"]
+- ["Ps13IndexableBase", "Value"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "count"]
@@ -836,13 +858,13 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "contains"]
-- !private ["Ps25LosslessStringConvertible", "init"]
+- ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "lowercased"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "contains"]
-- !private ["Ps10MirrorPath", "init"]
+- ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "lowercased"]
 - !private ["Ps17MutableCollection", "Index"]
 - !private ["Ps17MutableCollection", "IndexDistance"]
@@ -876,10 +898,8 @@ depends-member:
 - ["PSo8NSCoding", "UIScreen"]
 - ["PSo8NSCoding", "UISearchBar"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
-- !private ["PSo8NSCoding", "UserDefaults"]
 - ["PSo8NSCoding", "addFoodtoDB"]
 - !private ["PSo8NSCoding", "contains"]
-- ["PSo8NSCoding", "defaults"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "doubleValue"]
 - !private ["PSo8NSCoding", "endEditing"]
@@ -889,6 +909,7 @@ depends-member:
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lowercased"]
+- ["PSo8NSCoding", "mainDict"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "populateDummyData"]
@@ -936,7 +957,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "contains"]
 - !private ["PSo9NSCopying", "doubleValue"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lowercased"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "Calendar"]
@@ -947,14 +968,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - ["PSo26NSExtensionRequestHandling", "UISearchBar"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
-- !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "addFoodtoDB"]
-- ["PSo26NSExtensionRequestHandling", "defaults"]
 - ["PSo26NSExtensionRequestHandling", "filteredArray"]
 - ["PSo26NSExtensionRequestHandling", "foodArray"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "mainDict"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "populateDummyData"]
@@ -996,16 +1016,17 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "contains"]
-- !private ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "lowercased"]
 - !private ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSNumber", "doubleValue"]
-- !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "Calendar"]
 - !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "DispatchQueue"]
+- !private ["CSo8NSObject", "Double"]
 - !private ["CSo8NSObject", "FIRDatabase"]
 - ["CSo8NSObject", "FIRDatabaseReference"]
 - ["CSo8NSObject", "FoodItem"]
@@ -1018,14 +1039,12 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UInt"]
-- ["CSo8NSObject", "UserDefaults"]
 - ["CSo8NSObject", "addFoodtoDB"]
 - !private ["CSo8NSObject", "async"]
 - ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "contains"]
 - !private ["CSo8NSObject", "database"]
-- ["CSo8NSObject", "defaults"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "doubleValue"]
 - !private ["CSo8NSObject", "endEditing"]
@@ -1036,6 +1055,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "lowercased"]
 - ["CSo8NSObject", "main"]
+- ["CSo8NSObject", "mainDict"]
 - !private ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -1075,6 +1095,7 @@ depends-member:
 - ["CSo8NSObject", "searchBarTextDidEndEditing"]
 - ["CSo8NSObject", "sectionIndexTitles"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "showsCancelButton"]
 - ["CSo8NSObject", "stringDate"]
 - !private ["CSo8NSObject", "tableHeaderView"]
@@ -1094,14 +1115,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "UIScreen"]
 - ["PSo16NSObjectProtocol", "UISearchBar"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
-- !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - ["PSo16NSObjectProtocol", "addFoodtoDB"]
 - !private ["PSo16NSObjectProtocol", "async"]
 - ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "contains"]
 - !private ["PSo16NSObjectProtocol", "database"]
-- ["PSo16NSObjectProtocol", "defaults"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "doubleValue"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
@@ -1112,6 +1131,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "lowercased"]
 - ["PSo16NSObjectProtocol", "main"]
+- ["PSo16NSObjectProtocol", "mainDict"]
 - !private ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -1151,6 +1171,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "searchBarTextDidEndEditing"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitles"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "showsCancelButton"]
 - ["PSo16NSObjectProtocol", "stringDate"]
 - !private ["PSo16NSObjectProtocol", "tableHeaderView"]
@@ -1164,10 +1185,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "contains"]
 - !private ["PSo14NSSecureCoding", "doubleValue"]
-- !private ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lowercased"]
 - !private ["CSo8NSString", "contains"]
-- !private ["CSo8NSString", "init"]
+- ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "lowercased"]
 - !private ["CSo7NSValue", "doubleValue"]
 - !private ["CSo9OS_object", "async"]
@@ -1239,7 +1260,9 @@ depends-member:
 - !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Indices"]
 - !private ["Ps8Sequence", "Iterator"]
+- ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "SubSequence"]
+- ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
@@ -1262,13 +1285,13 @@ depends-member:
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["SS", "contains"]
 - ["SS", "deinit"]
-- !private ["SS", "init"]
+- ["SS", "init"]
 - !private ["SS", "lowercased"]
 - !private ["Ps16TextOutputStream", "contains"]
-- !private ["Ps16TextOutputStream", "init"]
+- ["Ps16TextOutputStream", "init"]
 - !private ["Ps16TextOutputStream", "lowercased"]
 - !private ["Ps20TextOutputStreamable", "contains"]
-- !private ["Ps20TextOutputStreamable", "init"]
+- ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "lowercased"]
 - !private ["V10Foundation8TimeZone", "current"]
 - ["V10Foundation8TimeZone", "deinit"]
@@ -1297,9 +1320,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "UIScreen"]
 - ["PSo21UIAppearanceContainer", "UISearchBar"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
-- !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - ["PSo21UIAppearanceContainer", "addFoodtoDB"]
-- ["PSo21UIAppearanceContainer", "defaults"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
 - ["PSo21UIAppearanceContainer", "filteredArray"]
@@ -1307,6 +1328,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "mainDict"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "populateDummyData"]
@@ -1366,13 +1388,12 @@ depends-member:
 - ["PSo24UIBarPositioningDelegate", "UIScreen"]
 - ["PSo24UIBarPositioningDelegate", "UISearchBar"]
 - !private ["PSo24UIBarPositioningDelegate", "UITableViewCell"]
-- !private ["PSo24UIBarPositioningDelegate", "UserDefaults"]
 - !private ["PSo24UIBarPositioningDelegate", "addFoodtoDB"]
-- !private ["PSo24UIBarPositioningDelegate", "defaults"]
 - !private ["PSo24UIBarPositioningDelegate", "filteredArray"]
 - !private ["PSo24UIBarPositioningDelegate", "foodArray"]
 - ["PSo24UIBarPositioningDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UIBarPositioningDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo24UIBarPositioningDelegate", "mainDict"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSections"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo24UIBarPositioningDelegate", "populateTableView"]
@@ -1406,6 +1427,7 @@ depends-member:
 - ["PSo24UIBarPositioningDelegate", "searchBarTextDidEndEditing"]
 - ["PSo24UIBarPositioningDelegate", "sectionIndexTitles"]
 - ["PSo24UIBarPositioningDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo24UIBarPositioningDelegate", "stringDate"]
 - ["PSo24UIBarPositioningDelegate", "tableView"]
 - ["PSo24UIBarPositioningDelegate", "viewForZooming"]
 - ["PSo24UIBarPositioningDelegate", "viewForZoomingInScrollView"]
@@ -1419,14 +1441,13 @@ depends-member:
 - ["PSo18UIContentContainer", "UIScreen"]
 - ["PSo18UIContentContainer", "UISearchBar"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
-- !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "addFoodtoDB"]
-- ["PSo18UIContentContainer", "defaults"]
 - ["PSo18UIContentContainer", "filteredArray"]
 - ["PSo18UIContentContainer", "foodArray"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "mainDict"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "populateDummyData"]
@@ -1493,9 +1514,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "UIScreen"]
 - ["PSo18UIFocusEnvironment", "UISearchBar"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
-- !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - ["PSo18UIFocusEnvironment", "addFoodtoDB"]
-- ["PSo18UIFocusEnvironment", "defaults"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
 - ["PSo18UIFocusEnvironment", "filteredArray"]
@@ -1503,6 +1522,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "mainDict"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "populateDummyData"]
@@ -1560,12 +1580,13 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "text"]
-- !private ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "Calendar"]
 - !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
+- !private ["CSo11UIResponder", "Double"]
 - !private ["CSo11UIResponder", "FIRDatabase"]
 - ["CSo11UIResponder", "FIRDatabaseReference"]
 - ["CSo11UIResponder", "FoodItem"]
@@ -1578,9 +1599,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UInt"]
-- ["CSo11UIResponder", "UserDefaults"]
 - ["CSo11UIResponder", "addFoodtoDB"]
-- ["CSo11UIResponder", "defaults"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "endEditing"]
 - ["CSo11UIResponder", "filteredArray"]
@@ -1588,6 +1607,7 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "mainDict"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "populateDummyData"]
@@ -1641,9 +1661,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "UIScreen"]
 - ["PSo30UIResponderStandardEditActions", "UISearchBar"]
 - !private ["PSo30UIResponderStandardEditActions", "UITableViewCell"]
-- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - ["PSo30UIResponderStandardEditActions", "addFoodtoDB"]
-- ["PSo30UIResponderStandardEditActions", "defaults"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - ["PSo30UIResponderStandardEditActions", "filteredArray"]
@@ -1651,6 +1669,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "mainDict"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
 - ["PSo30UIResponderStandardEditActions", "populateDummyData"]
@@ -1710,13 +1729,12 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "UIScreen"]
 - ["PSo20UIScrollViewDelegate", "UISearchBar"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
-- !private ["PSo20UIScrollViewDelegate", "UserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "addFoodtoDB"]
-- !private ["PSo20UIScrollViewDelegate", "defaults"]
 - !private ["PSo20UIScrollViewDelegate", "filteredArray"]
 - !private ["PSo20UIScrollViewDelegate", "foodArray"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "mainDict"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "populateTableView"]
@@ -1750,6 +1768,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "searchBarTextDidEndEditing"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitles"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "stringDate"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
@@ -1769,13 +1788,12 @@ depends-member:
 - ["PSo19UISearchBarDelegate", "UIScreen"]
 - ["PSo19UISearchBarDelegate", "UISearchBar"]
 - !private ["PSo19UISearchBarDelegate", "UITableViewCell"]
-- !private ["PSo19UISearchBarDelegate", "UserDefaults"]
 - !private ["PSo19UISearchBarDelegate", "addFoodtoDB"]
-- !private ["PSo19UISearchBarDelegate", "defaults"]
 - !private ["PSo19UISearchBarDelegate", "filteredArray"]
 - !private ["PSo19UISearchBarDelegate", "foodArray"]
 - ["PSo19UISearchBarDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UISearchBarDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UISearchBarDelegate", "mainDict"]
 - ["PSo19UISearchBarDelegate", "numberOfSections"]
 - ["PSo19UISearchBarDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UISearchBarDelegate", "populateTableView"]
@@ -1809,6 +1827,7 @@ depends-member:
 - ["PSo19UISearchBarDelegate", "searchBarTextDidEndEditing"]
 - ["PSo19UISearchBarDelegate", "sectionIndexTitles"]
 - ["PSo19UISearchBarDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UISearchBarDelegate", "stringDate"]
 - ["PSo19UISearchBarDelegate", "tableView"]
 - ["PSo19UISearchBarDelegate", "viewForZooming"]
 - ["PSo19UISearchBarDelegate", "viewForZoomingInScrollView"]
@@ -1822,14 +1841,13 @@ depends-member:
 - ["PSo16UIStateRestoring", "UIScreen"]
 - ["PSo16UIStateRestoring", "UISearchBar"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
-- !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "addFoodtoDB"]
-- ["PSo16UIStateRestoring", "defaults"]
 - ["PSo16UIStateRestoring", "filteredArray"]
 - ["PSo16UIStateRestoring", "foodArray"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "mainDict"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "populateDummyData"]
@@ -1886,13 +1904,12 @@ depends-member:
 - ["PSo21UITableViewDataSource", "UIScreen"]
 - ["PSo21UITableViewDataSource", "UISearchBar"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
-- !private ["PSo21UITableViewDataSource", "UserDefaults"]
 - !private ["PSo21UITableViewDataSource", "addFoodtoDB"]
-- !private ["PSo21UITableViewDataSource", "defaults"]
 - !private ["PSo21UITableViewDataSource", "filteredArray"]
 - !private ["PSo21UITableViewDataSource", "foodArray"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "mainDict"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "populateTableView"]
@@ -1926,6 +1943,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "searchBarTextDidEndEditing"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitles"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "stringDate"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZooming"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
@@ -1939,13 +1957,12 @@ depends-member:
 - ["PSo19UITableViewDelegate", "UIScreen"]
 - ["PSo19UITableViewDelegate", "UISearchBar"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
-- !private ["PSo19UITableViewDelegate", "UserDefaults"]
 - !private ["PSo19UITableViewDelegate", "addFoodtoDB"]
-- !private ["PSo19UITableViewDelegate", "defaults"]
 - !private ["PSo19UITableViewDelegate", "filteredArray"]
 - !private ["PSo19UITableViewDelegate", "foodArray"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "mainDict"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "populateTableView"]
@@ -1979,6 +1996,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "searchBarTextDidEndEditing"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitles"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "stringDate"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZooming"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
@@ -1997,10 +2015,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "UIScreen"]
 - ["PSo18UITraitEnvironment", "UISearchBar"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
-- !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - ["PSo18UITraitEnvironment", "addFoodtoDB"]
 - ["PSo18UITraitEnvironment", "bounds"]
-- ["PSo18UITraitEnvironment", "defaults"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
 - ["PSo18UITraitEnvironment", "filteredArray"]
@@ -2009,6 +2025,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "main"]
+- ["PSo18UITraitEnvironment", "mainDict"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "populateDummyData"]
@@ -2062,12 +2079,13 @@ depends-member:
 - !private ["CSo6UIView", "tableHeaderView"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
-- !private ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "Calendar"]
 - !private ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "DispatchQueue"]
+- !private ["CSo16UIViewController", "Double"]
 - !private ["CSo16UIViewController", "FIRDatabase"]
 - ["CSo16UIViewController", "FIRDatabaseReference"]
 - ["CSo16UIViewController", "FoodItem"]
@@ -2080,15 +2098,14 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "UInt"]
-- ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "addFoodtoDB"]
-- ["CSo16UIViewController", "defaults"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "filteredArray"]
 - ["CSo16UIViewController", "foodArray"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "mainDict"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "populateDummyData"]
@@ -2135,13 +2152,13 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
-- !private ["CSo12UserDefaults", "init"]
-- !private ["C9Nutrition14ViewController", "AnyObject"]
+- ["C9Nutrition14ViewController", "AnyObject"]
 - ["C9Nutrition14ViewController", "Bool"]
 - ["C9Nutrition14ViewController", "CGRect"]
 - !private ["C9Nutrition14ViewController", "Calendar"]
 - !private ["C9Nutrition14ViewController", "Date"]
 - !private ["C9Nutrition14ViewController", "DispatchQueue"]
+- !private ["C9Nutrition14ViewController", "Double"]
 - !private ["C9Nutrition14ViewController", "FIRDatabase"]
 - ["C9Nutrition14ViewController", "FIRDatabaseReference"]
 - ["C9Nutrition14ViewController", "FoodItem"]
@@ -2154,15 +2171,14 @@ depends-member:
 - ["C9Nutrition14ViewController", "UITableView"]
 - ["C9Nutrition14ViewController", "UITableViewCell"]
 - ["C9Nutrition14ViewController", "UInt"]
-- ["C9Nutrition14ViewController", "UserDefaults"]
 - ["C9Nutrition14ViewController", "addFoodtoDB"]
-- ["C9Nutrition14ViewController", "defaults"]
 - ["C9Nutrition14ViewController", "deinit"]
 - ["C9Nutrition14ViewController", "filteredArray"]
 - ["C9Nutrition14ViewController", "foodArray"]
 - ["C9Nutrition14ViewController", "indexPathForPreferredFocusedView"]
 - ["C9Nutrition14ViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C9Nutrition14ViewController", "init"]
+- ["C9Nutrition14ViewController", "mainDict"]
 - ["C9Nutrition14ViewController", "numberOfSections"]
 - ["C9Nutrition14ViewController", "numberOfSectionsInTableView"]
 - ["C9Nutrition14ViewController", "populateDummyData"]
@@ -2232,23 +2248,23 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "contains"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "lowercased"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "contains"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "lowercased"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "contains"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "lowercased"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "contains"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "lowercased"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "contains"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "doubleValue"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "lowercased"]
 - ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "Calendar"]
@@ -2261,7 +2277,6 @@ depends-member:
 - ["Ps9_Hashable", "UIScreen"]
 - ["Ps9_Hashable", "UISearchBar"]
 - !private ["Ps9_Hashable", "UITableViewCell"]
-- !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "addFoodtoDB"]
@@ -2275,7 +2290,6 @@ depends-member:
 - !private ["Ps9_Hashable", "dateComponents"]
 - !private ["Ps9_Hashable", "day"]
 - !private ["Ps9_Hashable", "default"]
-- ["Ps9_Hashable", "defaults"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "doubleValue"]
 - !private ["Ps9_Hashable", "endEditing"]
@@ -2287,6 +2301,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "lowercased"]
 - ["Ps9_Hashable", "main"]
+- ["Ps9_Hashable", "mainDict"]
 - !private ["Ps9_Hashable", "month"]
 - !private ["Ps9_Hashable", "name"]
 - ["Ps9_Hashable", "numberOfSections"]
@@ -2328,6 +2343,7 @@ depends-member:
 - ["Ps9_Hashable", "searchBarTextDidEndEditing"]
 - ["Ps9_Hashable", "sectionIndexTitles"]
 - ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "showsCancelButton"]
 - ["Ps9_Hashable", "stringDate"]
 - !private ["Ps9_Hashable", "tableHeaderView"]
@@ -2358,8 +2374,10 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -2398,7 +2416,7 @@ depends-nominal:
 - "V10Foundation8Calendar"
 - !private "Vs9Character"
 - "Ps10Collection"
-- !private "Ps10Comparable"
+- "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -2407,21 +2425,21 @@ depends-nominal:
 - "V10Foundation14DateComponents"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
-- !private "Vs10Dictionary"
+- "Vs10Dictionary"
 - !private "CSo14DispatchObject"
 - !private "CSo13DispatchQueue"
 - "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
 - "OSC16FIRDataEventType"
 - !private "CSo15FIRDataSnapshot"
 - "CSo11FIRDatabase"
@@ -2444,20 +2462,20 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
+- "PSo16NSMutableCopying"
 - !private "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - !private "CSo7NSValue"
 - !private "CSo9OS_object"
 - "Sq"
@@ -2474,8 +2492,8 @@ depends-nominal:
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
 - "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
 - "V10Foundation8TimeZone"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
@@ -2513,18 +2531,17 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - !private "Sc"
-- !private "CSo12UserDefaults"
 - "C9Nutrition14ViewController"
 - "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
@@ -2578,4 +2595,4 @@ depends-external:
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Firebase/Core/Sources/Firebase.h"
-interface-hash: "bfb2e945fa3cdd2e8e66dba821a379ea"
+interface-hash: "577334b33b31e7dbaf90eca93f083b89"
