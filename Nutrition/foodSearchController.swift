@@ -1,14 +1,14 @@
 //
-//  textViewController.swift
+//  foodSearchController.swift
 //  Nutrition
 //
-//  Created by Aditya Garg on 12/27/16.
-//  Copyright © 2016 garg. All rights reserved.
+//  Created by Aditya Garg on 1/2/17.
+//  Copyright © 2017 garg. All rights reserved.
 //
 
 import UIKit
 
-class textViewController: UIViewController {
+class foodSearchController: UISearchController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
