@@ -4,7 +4,7 @@ This is my take on the "myfitnesspal" type calorie tracker app. Most of the free
 
 ### Food Tableview
 
-This tableview is populated from a list hosted on Firebase. It clearly presents the required info for each food (calories, carbs, protein, fat). In addition each element is color coded (red/green for high/low calories) and the other colors appear when the particular food item has a high content of that macro. I think this allows for users to understand the food item in a quick glance. 
+This tableview is populated from a list hosted on Firebase. It clearly presents the required info for each food (calories, carbs, protein, fat). In addition each element is color coded (red/green for high/low calories) and the other colors appear when the particular food item contains a large amount of the macro. This allows for users to understand the food item in a quick glance without additional screens. 
 
 ### Calorie Tracker Chart
 
