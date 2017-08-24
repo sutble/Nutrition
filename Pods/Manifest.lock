@@ -26,11 +26,13 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - SkyFloatingLabelTextField (2.0.0)
 
 DEPENDENCIES:
   - Charts
   - Firebase/Core
   - Firebase/Database
+  - SkyFloatingLabelTextField (~> 2.0)
 
 SPEC CHECKSUMS:
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
@@ -42,7 +44,8 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  SkyFloatingLabelTextField: a81a0eaed2785d1599f11484c6ebc1c4eb5d1228
 
-PODFILE CHECKSUM: 0c078e9e48e5849947d8082d49d8414bfc7e6835
+PODFILE CHECKSUM: b74f5e60d392e05289dbed1f6521c2440ad47f7a
 
 COCOAPODS: 1.1.1

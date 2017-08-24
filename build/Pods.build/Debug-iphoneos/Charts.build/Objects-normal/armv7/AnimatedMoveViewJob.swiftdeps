@@ -8,19 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 - "animationUpdate"
 depends-top-level:
+- "CGFloat"
+- "Transformer"
+- "Double"
+- !private "*"
+- "ChartViewBase"
 - "TimeInterval"
 - "ChartEasingFunctionBlock"
-- !private "+"
-- !private "-"
-- "Double"
-- "Transformer"
-- "ChartViewBase"
-- "CGFloat"
-- "AnimatedViewPortJob"
-- "ViewPortHandler"
-- !private "*"
-- "AnimatedMoveViewJob"
 - !private "CGPoint"
+- "AnimatedMoveViewJob"
+- !private "+"
+- "AnimatedViewPortJob"
+- !private "-"
+- "ViewPortHandler"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -333,8 +333,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"

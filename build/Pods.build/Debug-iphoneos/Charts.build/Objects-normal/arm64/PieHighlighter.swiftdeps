@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "closestHighlight"
 depends-top-level:
-- "CGFloat"
-- "Highlight"
 - "PieHighlighter"
-- "Int"
-- "PieRadarHighlighter"
 - !private "Double"
+- "Int"
+- "Highlight"
+- "CGFloat"
+- "PieRadarHighlighter"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]
@@ -100,7 +100,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "closestHighlight"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSets"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -114,7 +113,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "Highlight"]
@@ -161,7 +159,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "Highlight"]
@@ -239,7 +236,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "y"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - ["C6Charts14PieHighlighter", "CGFloat"]
 - !private ["C6Charts14PieHighlighter", "Double"]
 - ["C6Charts14PieHighlighter", "Highlight"]
@@ -374,7 +370,7 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
@@ -383,7 +379,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "C6Charts9Highlight"
@@ -431,14 +426,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "04c5e8af9ad822bb9ed635ff3a7432fe"

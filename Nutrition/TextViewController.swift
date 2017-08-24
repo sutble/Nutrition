@@ -8,7 +8,7 @@
 
 import UIKit
 
-class textViewController: UIViewController {
+class TextViewController: UIViewController {
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var foodText: UITextView!
     var resetButton : UIButton = UIButton(type: .custom)
@@ -28,10 +28,13 @@ class textViewController: UIViewController {
         
     }
     
+    //MARK: - Button
+    
     func setupButton(){
         
         let darkBlue = UIColor(red: 13/255, green: 60/255, blue: 85/255, alpha: 1)
         let lightBlue = UIColor(red: 19/255, green: 149/255, blue: 186/255, alpha: 1)
+ 
         
         resetButton.frame = CGRect(x: 45.0, y: 550, width: 280.0, height: 60.0)
         resetButton.backgroundColor = darkBlue
@@ -60,6 +63,7 @@ class textViewController: UIViewController {
         generator.notificationOccurred(.success)
     }
     
+    //MARK: - Label
     
     func setupLabel(){
         let darkBlue = UIColor(red: 13/255, green: 60/255, blue: 85/255, alpha: 1)
@@ -69,11 +73,15 @@ class textViewController: UIViewController {
         foodLabel.textColor = darkBlue
     }
     
+    //MARKs: - TextView
+    
     func setupView(){
         foodText.font = UIFont(name: "HelveticaNeue-Medium", size: 20)
         foodText.backgroundColor = UIColor.white.withAlphaComponent(0.4)
         foodText.keyboardDismissMode = .onDrag
     }
+    
+    //MARK: - Helper Functions
     
     func tapDismiss(){
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")

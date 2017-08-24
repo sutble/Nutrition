@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6Charts11ViewPortJob", ""]
 provides-dynamic-lookup:
-- "viewPortHandler"
-- "doJob"
-- "point"
 - "xValue"
+- "viewPortHandler"
+- "view"
 - "yValue"
 - "transformer"
-- "view"
+- "doJob"
+- "point"
 depends-top-level:
-- "ViewPortHandler"
-- "AssignmentPrecedence"
-- !private "StringLiteralType"
-- "NSObject"
 - "Double"
-- "CGPoint"
-- "Transformer"
+- "ViewPortHandler"
 - "ChartViewBase"
+- "Transformer"
+- "AssignmentPrecedence"
+- "NSObject"
 - "ViewPortJob"
+- !private "StringLiteralType"
+- "CGPoint"
 depends-member:
 - ["Ps9AnyObject", "CGPoint"]
 - ["Ps9AnyObject", "doJob"]
@@ -152,6 +152,7 @@ depends-member:
 - ["Ps9_Hashable", "xValue"]
 - ["Ps9_Hashable", "yValue"]
 - ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "VSC7CGPoint"
@@ -180,17 +181,19 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "162878edbf9f1cfcdd8eba6872d717b4"

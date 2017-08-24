@@ -6,94 +6,94 @@ provides-nominal:
 provides-member:
 - ["C6Charts8AxisBase", ""]
 provides-dynamic-lookup:
-- "axisMaxValue"
-- "gridLineDashLengths"
-- "removeLimitLine"
-- "getFormattedLabel"
-- "spaceMax"
-- "removeAllLimitLines"
-- "_axisMaximum"
-- "drawLimitLinesBehindDataEnabled"
-- "centerAxisLabelsEnabled"
-- "forceLabelsEnabled"
-- "isForceLabelsEnabled"
-- "setLabelCount"
-- "axisLineDashPhase"
-- "resetCustomAxisMax"
-- "labelFont"
-- "decimals"
-- "isDrawLabelsEnabled"
-- "gridColor"
-- "gridLineDashPhase"
-- "isDrawAxisLineEnabled"
-- "centeredEntries"
-- "getLongestLabel"
-- "spaceMin"
-- "isAxisMaxCustom"
-- "drawLabelsEnabled"
-- "isGranularityEnabled"
-- "axisMinimum"
-- "labelTextColor"
-- "granularity"
-- "axisLineDashLengths"
-- "valueFormatter"
-- "axisMaximum"
-- "limitLines"
-- "labelCount"
-- "isAxisMinCustom"
 - "entries"
-- "gridLineWidth"
-- "drawAxisLineEnabled"
 - "axisLineColor"
-- "addLimitLine"
-- "_axisMinimum"
-- "isDrawLimitLinesBehindDataEnabled"
-- "entryCount"
-- "gridLineCap"
-- "_customAxisMin"
-- "gridAntialiasEnabled"
-- "isDrawGridLinesEnabled"
 - "axisRange"
+- "drawGridLinesEnabled"
+- "isDrawAxisLineEnabled"
+- "granularity"
+- "valueFormatter"
+- "axisMinValue"
+- "entryCount"
+- "spaceMax"
+- "gridColor"
+- "gridLineCap"
+- "removeAllLimitLines"
 - "resetCustomAxisMin"
+- "drawAxisLineEnabled"
+- "getLongestLabel"
+- "_axisMaximum"
+- "axisMinimum"
+- "resetCustomAxisMax"
+- "axisMaxValue"
+- "addLimitLine"
+- "labelTextColor"
+- "gridLineDashLengths"
+- "drawLabelsEnabled"
+- "spaceMin"
+- "isDrawLabelsEnabled"
+- "axisLineDashLengths"
+- "isGranularityEnabled"
+- "centeredEntries"
+- "getFormattedLabel"
+- "_axisMinimum"
+- "gridLineDashPhase"
+- "calculate"
+- "decimals"
+- "axisLineDashPhase"
+- "drawLimitLinesBehindDataEnabled"
+- "isDrawGridLinesEnabled"
+- "_customAxisMax"
+- "labelFont"
+- "labelCount"
+- "isForceLabelsEnabled"
+- "isAxisMinCustom"
+- "limitLines"
+- "removeLimitLine"
+- "centerAxisLabelsEnabled"
+- "isAxisMaxCustom"
+- "axisMaximum"
+- "gridLineWidth"
+- "forceLabelsEnabled"
+- "isDrawLimitLinesBehindDataEnabled"
+- "granularityEnabled"
 - "isCenterAxisLabelsEnabled"
 - "axisLineWidth"
-- "drawGridLinesEnabled"
-- "axisMinValue"
-- "calculate"
-- "_customAxisMax"
-- "granularityEnabled"
+- "setLabelCount"
+- "_customAxisMin"
+- "gridAntialiasEnabled"
 depends-top-level:
-- "AxisBase"
-- "NSUIFont"
+- !private "DefaultAxisValueFormatter"
+- "TernaryPrecedence"
+- !private "abs"
+- !private "??"
+- "CGLineCap"
 - "ChartLimitLine"
 - "Double"
 - !private "!="
-- !private ">"
-- !private "&&"
-- !private "abs"
-- !private "DefaultAxisValueFormatter"
-- "NSUIColor"
-- "BooleanLiteralType"
-- !private "<"
-- "CGLineCap"
-- !private "..<"
-- !private "-"
+- "NSUIFont"
 - "Bool"
+- "NSUIColor"
 - "IAxisValueFormatter"
-- "CGFloat"
-- !private "??"
-- !private ">="
-- !private "||"
-- "CastingPrecedence"
-- "TernaryPrecedence"
 - "String"
-- "AssignmentPrecedence"
-- "ComponentBase"
-- !private "=="
-- !private "+"
-- "Int"
-- !private "StringLiteralType"
+- !private "&&"
 - !private "==="
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- !private "..<"
+- !private ">"
+- !private "||"
+- !private "<"
+- !private "+"
+- !private "=="
+- "ComponentBase"
+- !private "StringLiteralType"
+- "Int"
+- !private ">="
+- !private "-"
+- "AxisBase"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -295,6 +295,7 @@ depends-member:
 - !private ["Ps19BinaryFloatingPoint", "Stride"]
 - ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "RawValue"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - ["Ps17BitwiseOperations", "init"]
@@ -316,6 +317,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Iterator"]
 - ["Ps7CVarArg", "NSUIColor"]
 - ["Ps7CVarArg", "NSUIFont"]
+- !private ["Ps7CVarArg", "RawValue"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
@@ -412,6 +414,7 @@ depends-member:
 - !private ["Ps10Collection", "removeAll"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "RawValue"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "characters"]
@@ -585,6 +588,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "withAlphaComponent"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "RawValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -594,6 +598,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
@@ -618,6 +623,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - ["Ps23CustomStringConvertible", "NSUIColor"]
 - ["Ps23CustomStringConvertible", "NSUIFont"]
+- !private ["Ps23CustomStringConvertible", "RawValue"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -725,6 +731,7 @@ depends-member:
 - !private ["Ps9Equatable", "Iterator"]
 - ["Ps9Equatable", "NSUIColor"]
 - ["Ps9Equatable", "NSUIFont"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
@@ -817,6 +824,7 @@ depends-member:
 - !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
@@ -837,6 +845,7 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "NSUIColor"]
 - ["Ps8Hashable", "NSUIFont"]
+- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - ["Ps8Hashable", "_axisMaximum"]
@@ -943,6 +952,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "RawValue"]
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
@@ -950,10 +960,12 @@ depends-member:
 - !private ["Vs5Int32", "Stride"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "RawValue"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
 - ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "RawValue"]
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - ["Ps17IntegerArithmetic", "init"]
@@ -963,6 +975,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "characters"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "RawValue"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "characters"]
@@ -1238,10 +1251,12 @@ depends-member:
 - !private ["Ps8Sequence", "removeAll"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "RawValue"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
 - ["Ps13SignedInteger", "init"]
 - !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "RawValue"]
 - !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - ["Ps12SignedNumber", "init"]
@@ -1250,6 +1265,7 @@ depends-member:
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "RawValue"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - ["Ps10Strideable", "init"]
@@ -1298,6 +1314,7 @@ depends-member:
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "RawValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
@@ -1321,6 +1338,7 @@ depends-member:
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - ["Ps9_Hashable", "NSUIColor"]
 - ["Ps9_Hashable", "NSUIFont"]
+- !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - ["Ps9_Hashable", "_axisMaximum"]
@@ -1396,14 +1414,17 @@ depends-member:
 - ["Ps9_Hashable", "withAlphaComponent"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "RawValue"]
 - !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - ["Ps14_Incrementable", "init"]
 - !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "RawValue"]
 - !private ["Ps8_Integer", "Stride"]
 - !private ["Ps8_Integer", "_DisabledRangeIndex"]
 - ["Ps8_Integer", "init"]
 - !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "RawValue"]
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - ["Ps18_IntegerArithmetic", "init"]
@@ -1411,6 +1432,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
@@ -1425,10 +1447,12 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "RawValue"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
 - ["Ps14_SignedInteger", "init"]
 - !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "RawValue"]
 - !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 - ["Ps11_Strideable", "init"]
@@ -1534,14 +1558,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "e46de48c327bad87e39c4cb12d8d846a"

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		182DE6781E0B9F0E000C24D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DE6771E0B9F0E000C24D2 /* AppDelegate.swift */; };
-		182DE67A1E0B9F0E000C24D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DE6791E0B9F0E000C24D2 /* ViewController.swift */; };
 		182DE67D1E0B9F0E000C24D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DE67B1E0B9F0E000C24D2 /* Main.storyboard */; };
 		182DE67F1E0B9F0E000C24D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */; };
 		182DE6821E0B9F0E000C24D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182DE6801E0B9F0E000C24D2 /* LaunchScreen.storyboard */; };
@@ -19,19 +18,33 @@
 		182EE46B1E13117C00ABC0DD /* lightBlueLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4631E13117C00ABC0DD /* lightBlueLabel.png */; };
 		182EE46C1E13117C00ABC0DD /* orangeLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4641E13117C00ABC0DD /* orangeLabel.png */; };
 		182EE46D1E13117C00ABC0DD /* xmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4651E13117C00ABC0DD /* xmarks.png */; };
-		182EE46E1E13117C00ABC0DD /* orangePatternShaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4661E13117C00ABC0DD /* orangePatternShaded.png */; };
 		182EE46F1E13117C00ABC0DD /* SubwayLogo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */; };
+		185FB5971E18F44F0005DC1C /* lightBlue2.png in Resources */ = {isa = PBXBuildFile; fileRef = 185FB5961E18F44D0005DC1C /* lightBlue2.png */; };
+		186B129C1E14705F004396B1 /* Science Fair Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186B12981E14705F004396B1 /* Science Fair Italic.otf */; };
+		186B129D1E14705F004396B1 /* Science Fair Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186B12991E14705F004396B1 /* Science Fair Light Italic.otf */; };
+		186B129E1E14705F004396B1 /* Science Fair Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186B129A1E14705F004396B1 /* Science Fair Light.otf */; };
+		186B129F1E14705F004396B1 /* Science Fair.otf in Resources */ = {isa = PBXBuildFile; fileRef = 186B129B1E14705F004396B1 /* Science Fair.otf */; };
 		186CF0501E0DB0150059EAF3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CF04F1E0DB0150059EAF3 /* AddViewController.swift */; };
 		186F237A1E0C701E006311A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186F23791E0C701E006311A7 /* GoogleService-Info.plist */; };
+		18C79B031E18F7C300DE1174 /* lb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C79B021E18F7C300DE1174 /* lb2.png */; };
+		18C79B071E18FDBA00DE1174 /* orangePatternShaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C79B061E18FDBA00DE1174 /* orangePatternShaded.png */; };
+		18C79B091E18FE5600DE1174 /* orangePattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C79B081E18FE5600DE1174 /* orangePattern.png */; };
+		18C79B0B1E18FEE300DE1174 /* lightBluePattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C79B0A1E18FEE300DE1174 /* lightBluePattern.png */; };
+		18C79B0F1E1B2C7500DE1174 /* foodSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C79B0E1E1B2C7500DE1174 /* foodSearchBar.swift */; };
+		18C79B111E1B302300DE1174 /* foodSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C79B101E1B302300DE1174 /* foodSearchController.swift */; };
+		18C79B131E1BA3F700DE1174 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C79B121E1BA3F700DE1174 /* CustomTableViewCell.swift */; };
+		18D870961E1F26DC00D34FF0 /* lightBluePatternWide.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D870951E1F26DC00D34FF0 /* lightBluePatternWide.png */; };
+		18D870981E1F286200D34FF0 /* darkBluePatternWide.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D870971E1F286200D34FF0 /* darkBluePatternWide.png */; };
+		18D8709A1E1F291D00D34FF0 /* orangePatternWide.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D870991E1F291D00D34FF0 /* orangePatternWide.png */; };
+		18D8709C1E1F2CB800D34FF0 /* orangeCross.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D8709B1E1F2CB800D34FF0 /* orangeCross.png */; };
 		18E4511A1E0BD5C300F1330E /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E451191E0BD5C300F1330E /* FoodItem.swift */; };
-		18F6303E1E13373800EF7D1E /* textViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6303D1E13373800EF7D1E /* textViewController.swift */; };
+		18F6303E1E13373800EF7D1E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6303D1E13373800EF7D1E /* TextViewController.swift */; };
 		CA8A62F8524FE82C83C66EE3 /* Pods_Nutrition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A842AF68C2D137D6E7BD807 /* Pods_Nutrition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		182DE6741E0B9F0E000C24D2 /* Nutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182DE6771E0B9F0E000C24D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		182DE6791E0B9F0E000C24D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		182DE67C1E0B9F0E000C24D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182DE6811E0B9F0E000C24D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,13 +56,27 @@
 		182EE4631E13117C00ABC0DD /* lightBlueLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBlueLabel.png; sourceTree = "<group>"; };
 		182EE4641E13117C00ABC0DD /* orangeLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeLabel.png; sourceTree = "<group>"; };
 		182EE4651E13117C00ABC0DD /* xmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmarks.png; sourceTree = "<group>"; };
-		182EE4661E13117C00ABC0DD /* orangePatternShaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePatternShaded.png; sourceTree = "<group>"; };
 		182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SubwayLogo.ttf; sourceTree = "<group>"; };
+		185FB5961E18F44D0005DC1C /* lightBlue2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBlue2.png; sourceTree = "<group>"; };
+		186B12981E14705F004396B1 /* Science Fair Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Science Fair Italic.otf"; sourceTree = "<group>"; };
+		186B12991E14705F004396B1 /* Science Fair Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Science Fair Light Italic.otf"; sourceTree = "<group>"; };
+		186B129A1E14705F004396B1 /* Science Fair Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Science Fair Light.otf"; sourceTree = "<group>"; };
+		186B129B1E14705F004396B1 /* Science Fair.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Science Fair.otf"; sourceTree = "<group>"; };
 		186CF04F1E0DB0150059EAF3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		186CF0511E0F1AF90059EAF3 /* Nutrition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nutrition.entitlements; sourceTree = "<group>"; };
 		186F23791E0C701E006311A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18C79B021E18F7C300DE1174 /* lb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lb2.png; sourceTree = "<group>"; };
+		18C79B061E18FDBA00DE1174 /* orangePatternShaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePatternShaded.png; sourceTree = "<group>"; };
+		18C79B081E18FE5600DE1174 /* orangePattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePattern.png; sourceTree = "<group>"; };
+		18C79B0A1E18FEE300DE1174 /* lightBluePattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBluePattern.png; sourceTree = "<group>"; };
+		18C79B0E1E1B2C7500DE1174 /* foodSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = foodSearchBar.swift; path = ../foodSearchBar.swift; sourceTree = "<group>"; };
+		18C79B101E1B302300DE1174 /* foodSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodSearchController.swift; sourceTree = "<group>"; };
+		18C79B121E1BA3F700DE1174 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		18D870951E1F26DC00D34FF0 /* lightBluePatternWide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBluePatternWide.png; sourceTree = "<group>"; };
+		18D870971E1F286200D34FF0 /* darkBluePatternWide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBluePatternWide.png; sourceTree = "<group>"; };
+		18D870991E1F291D00D34FF0 /* orangePatternWide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangePatternWide.png; sourceTree = "<group>"; };
+		18D8709B1E1F2CB800D34FF0 /* orangeCross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeCross.png; sourceTree = "<group>"; };
 		18E451191E0BD5C300F1330E /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
-		18F6303D1E13373800EF7D1E /* textViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textViewController.swift; sourceTree = "<group>"; };
+		18F6303D1E13373800EF7D1E /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		2B74A1F715AAE71136BC241C /* Pods-Nutrition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrition/Pods-Nutrition.release.xcconfig"; sourceTree = "<group>"; };
 		4A842AF68C2D137D6E7BD807 /* Pods_Nutrition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2B9EBED1963D8A88CA8CC0 /* Pods-Nutrition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrition/Pods-Nutrition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,28 +132,73 @@
 		182DE6761E0B9F0E000C24D2 /* Nutrition */ = {
 			isa = PBXGroup;
 			children = (
-				182EE45E1E1308E400ABC0DD /* ChartViewController.swift */,
-				18F6303D1E13373800EF7D1E /* textViewController.swift */,
-				186CF0511E0F1AF90059EAF3 /* Nutrition.entitlements */,
 				182DE6771E0B9F0E000C24D2 /* AppDelegate.swift */,
-				182DE6791E0B9F0E000C24D2 /* ViewController.swift */,
-				18E451191E0BD5C300F1330E /* FoodItem.swift */,
 				182DE67B1E0B9F0E000C24D2 /* Main.storyboard */,
-				186CF04F1E0DB0150059EAF3 /* AddViewController.swift */,
+				182DE6801E0B9F0E000C24D2 /* LaunchScreen.storyboard */,
+				18C79B151E1BA66700DE1174 /* View Controllers */,
+				18C79B141E1BA64D00DE1174 /* Custom UI */,
+				18C79B161E1BA69800DE1174 /* Resources */,
+				18E451191E0BD5C300F1330E /* FoodItem.swift */,
 				182DE67E1E0B9F0E000C24D2 /* Assets.xcassets */,
+				18C79B171E1BA6D100DE1174 /* plist */,
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		18C79B141E1BA64D00DE1174 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				18C79B121E1BA3F700DE1174 /* CustomTableViewCell.swift */,
+				18C79B101E1B302300DE1174 /* foodSearchController.swift */,
+				18C79B0E1E1B2C7500DE1174 /* foodSearchBar.swift */,
+			);
+			name = "Custom UI";
+			sourceTree = "<group>";
+		};
+		18C79B151E1BA66700DE1174 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				182EE45E1E1308E400ABC0DD /* ChartViewController.swift */,
+				18F6303D1E13373800EF7D1E /* TextViewController.swift */,
+				186CF04F1E0DB0150059EAF3 /* AddViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		18C79B161E1BA69800DE1174 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				186B12981E14705F004396B1 /* Science Fair Italic.otf */,
+				186B12991E14705F004396B1 /* Science Fair Light Italic.otf */,
+				186B129A1E14705F004396B1 /* Science Fair Light.otf */,
+				186B129B1E14705F004396B1 /* Science Fair.otf */,
+				18D8709B1E1F2CB800D34FF0 /* orangeCross.png */,
+				18C79B081E18FE5600DE1174 /* orangePattern.png */,
+				18D870991E1F291D00D34FF0 /* orangePatternWide.png */,
 				182EE4601E13117C00ABC0DD /* darkBluePattern.png */,
+				18D870971E1F286200D34FF0 /* darkBluePatternWide.png */,
+				185FB5961E18F44D0005DC1C /* lightBlue2.png */,
+				18C79B021E18F7C300DE1174 /* lb2.png */,
+				18C79B0A1E18FEE300DE1174 /* lightBluePattern.png */,
+				18D870951E1F26DC00D34FF0 /* lightBluePatternWide.png */,
 				182EE4611E13117C00ABC0DD /* lightBluePatternShaded.png */,
+				18C79B061E18FDBA00DE1174 /* orangePatternShaded.png */,
 				182EE4621E13117C00ABC0DD /* darkBlueLabel.png */,
 				182EE4631E13117C00ABC0DD /* lightBlueLabel.png */,
 				182EE4641E13117C00ABC0DD /* orangeLabel.png */,
 				182EE4651E13117C00ABC0DD /* xmarks.png */,
-				182EE4661E13117C00ABC0DD /* orangePatternShaded.png */,
 				182EE4671E13117C00ABC0DD /* SubwayLogo.ttf */,
-				182DE6801E0B9F0E000C24D2 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18C79B171E1BA6D100DE1174 /* plist */ = {
+			isa = PBXGroup;
+			children = (
 				182DE6831E0B9F0E000C24D2 /* Info.plist */,
 				186F23791E0C701E006311A7 /* GoogleService-Info.plist */,
 			);
-			path = Nutrition;
+			name = plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +269,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186B129C1E14705F004396B1 /* Science Fair Italic.otf in Resources */,
+				18C79B0B1E18FEE300DE1174 /* lightBluePattern.png in Resources */,
 				182EE46C1E13117C00ABC0DD /* orangeLabel.png in Resources */,
-				182EE46E1E13117C00ABC0DD /* orangePatternShaded.png in Resources */,
+				18C79B091E18FE5600DE1174 /* orangePattern.png in Resources */,
+				185FB5971E18F44F0005DC1C /* lightBlue2.png in Resources */,
+				186B129E1E14705F004396B1 /* Science Fair Light.otf in Resources */,
+				18D870961E1F26DC00D34FF0 /* lightBluePatternWide.png in Resources */,
+				186B129F1E14705F004396B1 /* Science Fair.otf in Resources */,
+				18C79B071E18FDBA00DE1174 /* orangePatternShaded.png in Resources */,
+				186B129D1E14705F004396B1 /* Science Fair Light Italic.otf in Resources */,
+				18D8709A1E1F291D00D34FF0 /* orangePatternWide.png in Resources */,
+				18C79B031E18F7C300DE1174 /* lb2.png in Resources */,
 				182DE6821E0B9F0E000C24D2 /* LaunchScreen.storyboard in Resources */,
 				186F237A1E0C701E006311A7 /* GoogleService-Info.plist in Resources */,
 				182EE4691E13117C00ABC0DD /* lightBluePatternShaded.png in Resources */,
 				182EE4681E13117C00ABC0DD /* darkBluePattern.png in Resources */,
+				18D8709C1E1F2CB800D34FF0 /* orangeCross.png in Resources */,
+				18D870981E1F286200D34FF0 /* darkBluePatternWide.png in Resources */,
 				182EE46A1E13117C00ABC0DD /* darkBlueLabel.png in Resources */,
 				182EE46B1E13117C00ABC0DD /* lightBlueLabel.png in Resources */,
 				182EE46D1E13117C00ABC0DD /* xmarks.png in Resources */,
@@ -267,10 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182DE67A1E0B9F0E000C24D2 /* ViewController.swift in Sources */,
+				18C79B0F1E1B2C7500DE1174 /* foodSearchBar.swift in Sources */,
 				18E4511A1E0BD5C300F1330E /* FoodItem.swift in Sources */,
 				186CF0501E0DB0150059EAF3 /* AddViewController.swift in Sources */,
-				18F6303E1E13373800EF7D1E /* textViewController.swift in Sources */,
+				18F6303E1E13373800EF7D1E /* TextViewController.swift in Sources */,
+				18C79B111E1B302300DE1174 /* foodSearchController.swift in Sources */,
+				18C79B131E1BA3F700DE1174 /* CustomTableViewCell.swift in Sources */,
 				182DE6781E0B9F0E000C24D2 /* AppDelegate.swift in Sources */,
 				182EE45F1E1308E400ABC0DD /* ChartViewController.swift in Sources */,
 			);

@@ -6,196 +6,197 @@ provides-nominal:
 provides-member:
 - ["C6Charts20BarLineChartViewBase", ""]
 provides-dynamic-lookup:
-- "_pinchGestureRecognizer"
-- "isDrawBordersEnabled"
-- "keepPositionOnRotation"
-- "moveViewToX"
-- "scaleY"
-- "pinchZoomEnabled"
-- "setYAxisMaxWidth"
-- "setVisibleYRangeMaximum"
-- "initialize"
-- "calculateOffsets"
-- "dragEnabled"
-- "scaleX"
 - "tapGestureRecognized"
-- "isScaleYEnabled"
+- "moveViewToX"
 - "getYAxisWidth"
-- "stopDeceleration"
-- "getEntryByTouchPoint"
-- "setVisibleXRangeMinimum"
-- "pinchGestureRecognized"
-- "visibleXRange"
-- "rightAxis"
-- "_doubleTapGestureRecognizer"
-- "setYAxisMinWidth"
-- "rightYAxisRenderer"
-- "isScaleXEnabled"
-- "xAxisRenderer"
-- "isHighlightPerDragEnabled"
-- "gestureRecognizer"
-- "zoom"
-- "zoom"
-- "highestVisibleX"
-- "lowestVisibleX"
+- "centerViewToAnimated"
+- "centerViewToAnimated"
+- "centerViewToAnimated"
+- "_panGestureRecognizer"
+- "isDrawBordersEnabled"
 - "gridBackgroundColor"
-- "centerViewToAnimated"
-- "centerViewToAnimated"
-- "centerViewToAnimated"
+- "setYAxisMaxWidth"
+- "gestureRecognizerShouldBegin"
+- "setVisibleXRangeMinimum"
+- "_pinchGestureRecognizer"
+- "scaleY"
+- "dragEnabled"
 - "pixelForValues"
-- "draw"
-- "_tapGestureRecognizer"
-- "doubleTapGestureRecognized"
-- "clipValuesToContentEnabled"
-- "scaleYEnabled"
-- "centerViewTo"
-- "getPosition"
-- "fitScreen"
 - "isPinchZoomEnabled"
-- "setVisibleXRange"
-- "minOffset"
-- "getTransformer"
-- "prepareValuePxMatrix"
-- "zoomToCenter"
+- "highestVisibleX"
+- "_rightAxis"
+- "keepPositionOnRotation"
+- "initialize"
+- "doubleTapGestureRecognized"
+- "isDoubleTapToZoomEnabled"
+- "rightAxis"
 - "setVisibleYRange"
+- "lowestVisibleX"
+- "maxVisibleCount"
+- "setScaleEnabled"
+- "pinchGestureRecognized"
+- "_doubleTapGestureRecognizer"
+- "isDragEnabled"
+- "centerViewTo"
+- "decelerationLoop"
+- "isDrawGridBackgroundEnabled"
+- "minOffset"
+- "fitScreen"
+- "gestureRecognizer"
+- "hasNoDragOffset"
+- "isScaleXEnabled"
+- "zoom"
+- "zoom"
+- "_leftAxis"
+- "setYAxisMinWidth"
+- "_tapGestureRecognizer"
+- "isScaleYEnabled"
+- "isFullyZoomedOut"
+- "zoomAndCenterViewAnimated"
+- "zoomAndCenterViewAnimated"
+- "zoomAndCenterViewAnimated"
+- "clipValuesToContentEnabled"
+- "panGestureRecognized"
 - "zoomIn"
 - "drawBordersEnabled"
-- "gestureRecognizerShouldBegin"
-- "decelerationLoop"
 - "autoScaleMinMaxEnabled"
-- "isDoubleTapToZoomEnabled"
-- "_rightAxis"
+- "prepareValuePxMatrix"
+- "leftYAxisRenderer"
 - "_xAxisRenderer"
-- "moveViewToY"
-- "panGestureRecognized"
-- "_leftAxisTransformer"
-- "notifyDataSetChanged"
+- "setVisibleYRangeMaximum"
+- "chartYMax"
+- "visibleXRange"
 - "isInverted"
-- "drawGridBackgroundEnabled"
-- "borderColor"
+- "draw"
+- "moveViewToY"
 - "_rightAxisTransformer"
-- "_maxVisibleCount"
+- "valueForTouchPoint"
+- "getDataSetByTouchPoint"
+- "scaleXEnabled"
+- "calculateOffsets"
+- "getYAxisMaxWidth"
 - "doubleTapToZoomEnabled"
 - "highlightPerDragEnabled"
 - "setDragOffsetY"
-- "getDataSetByTouchPoint"
-- "chartYMax"
-- "_leftAxis"
-- "valueForTouchPoint"
-- "prepareOffsetMatrix"
-- "observeValue"
-- "zoomAndCenterViewAnimated"
-- "zoomAndCenterViewAnimated"
-- "zoomAndCenterViewAnimated"
-- "_rightYAxisRenderer"
-- "isFullyZoomedOut"
-- "leftYAxisRenderer"
 - "setVisibleXRangeMaximum"
-- "setViewPortOffsets"
-- "scaleXEnabled"
-- "hasNoDragOffset"
+- "drawGridBackgroundEnabled"
+- "_leftAxisTransformer"
+- "_maxVisibleCount"
+- "setVisibleXRange"
+- "zoomToCenter"
+- "getPosition"
+- "setVisibleYRangeMinimum"
+- "getTransformer"
+- "notifyDataSetChanged"
+- "_rightYAxisRenderer"
+- "scaleYEnabled"
+- "prepareOffsetMatrix"
 - "borderLineWidth"
-- "getAxisRange"
-- "getYAxisMaxWidth"
-- "calcMinMax"
-- "resetViewPortOffsets"
-- "isDrawGridBackgroundEnabled"
-- "_leftYAxisRenderer"
-- "isDragEnabled"
-- "moveViewToAnimated"
-- "moveViewToAnimated"
-- "moveViewToAnimated"
-- "setScaleMinima"
-- "getAxis"
-- "maxVisibleCount"
-- "chartYMin"
-- "getYAxisMinWidth"
+- "observeValue"
 - "autoScale"
+- "setScaleMinima"
+- "moveViewToAnimated"
+- "moveViewToAnimated"
+- "moveViewToAnimated"
+- "drawGridBackground"
+- "getAxis"
+- "resetViewPortOffsets"
+- "_leftYAxisRenderer"
 - "zoomOut"
-- "_panGestureRecognizer"
+- "stopDeceleration"
+- "getAxisRange"
+- "setViewPortOffsets"
+- "borderColor"
+- "isAnyAxisInverted"
 - "moveViewTo"
 - "setDragOffsetX"
 - "isAutoScaleMinMaxEnabled"
-- "drawGridBackground"
+- "chartYMin"
 - "leftAxis"
-- "setScaleEnabled"
-- "setVisibleYRangeMinimum"
-- "isAnyAxisInverted"
+- "isHighlightPerDragEnabled"
+- "getYAxisMinWidth"
+- "getEntryByTouchPoint"
+- "scaleX"
+- "xAxisRenderer"
+- "calcMinMax"
+- "rightYAxisRenderer"
+- "pinchZoomEnabled"
 depends-top-level:
-- "CGRect"
-- !private "??"
-- "CGPoint"
-- !private "Thread"
-- !private "NSUIGestureRecognizerState"
-- "ChartDataEntry"
-- "CGFloat"
-- !private "min"
-- !private "max"
 - !private "==="
-- "NSCoder"
-- "NSUIPinchGestureRecognizer"
-- !private "CACurrentMediaTime"
-- "NSUIGestureRecognizerDelegate"
-- "UIGestureRecognizer"
-- !private "!"
-- "NSUIDisplayLink"
-- !private "StringLiteralType"
-- "Transformer"
-- !private "NSUIGraphicsGetCurrentContext"
-- !private "+="
-- !private "RunLoop"
-- !private "easingFunctionFromOption"
-- "Double"
-- !private "HorizontalBarChartView"
-- !private "RunLoopMode"
-- "ChartViewBase"
-- "TimeInterval"
-- "NSUIGestureRecognizer"
-- !private "CGAffineTransform"
-- "IChartDataSet"
-- !private "&&"
-- !private "abs"
-- "BooleanLiteralType"
-- "ChartEasingFunctionBlock"
-- "ChartEasingOption"
-- "UnsafeMutableRawPointer"
-- "NSUIColor"
-- "NSUIScrollView"
-- !private "<"
-- !private "AnimatedMoveViewJob"
-- !private ">"
-- !private "TernaryPrecedence"
-- "YAxis"
-- "NSKeyValueChangeKey"
-- "CGContext"
-- "YAxisRenderer"
-- "IBarLineScatterCandleBubbleChartDataSet"
-- !private "=="
-- !private "!=="
-- "CastingPrecedence"
-- "String"
-- "AssignmentPrecedence"
-- "NSUITapGestureRecognizer"
-- !private "*"
-- "Int"
-- !private "MoveViewJob"
-- !private "ZoomViewJob"
-- "Bool"
-- !private "DispatchQueue"
-- !private "!="
-- !private "-"
-- "/"
-- "BarLineScatterCandleBubbleChartDataProvider"
 - "BarLineChartViewBase"
-- !private "AnimatedZoomViewJob"
+- !private "!="
+- !private "*"
+- "NSUIPinchGestureRecognizer"
+- "ChartEasingOption"
+- !private "NSUIGestureRecognizerState"
+- !private "+="
 - "NSUIPanGestureRecognizer"
-- "XAxisRenderer"
-- !private "||"
-- !private "+"
-- !private "ChartHighlighter"
+- !private "AnimatedMoveViewJob"
+- "CGFloat"
+- !private "NSUIGraphicsGetCurrentContext"
+- !private "-"
 - !private "*="
+- !private "&&"
+- "NSKeyValueChangeKey"
+- !private "StringLiteralType"
+- "BarLineScatterCandleBubbleChartDataProvider"
+- !private "<"
+- !private "!"
+- !private "Thread"
+- "BooleanLiteralType"
+- "CGRect"
+- !private "ZoomViewJob"
+- !private "AnimatedZoomViewJob"
+- !private "TernaryPrecedence"
+- "String"
+- "NSUIColor"
+- !private "easingFunctionFromOption"
+- "YAxisRenderer"
+- !private ">"
+- "NSUITapGestureRecognizer"
+- "NSUIGestureRecognizer"
+- "Bool"
+- "NSUIGestureRecognizerDelegate"
+- "ChartEasingFunctionBlock"
+- !private "||"
+- !private "=="
+- "UnsafeMutableRawPointer"
+- "CastingPrecedence"
+- "YAxis"
+- "TimeInterval"
+- "Int"
+- "AssignmentPrecedence"
+- "/"
+- !private "MoveViewJob"
+- !private "DispatchQueue"
+- !private "!=="
+- !private "??"
+- !private "RunLoop"
+- !private "+"
+- "XAxisRenderer"
+- !private "min"
+- "CGContext"
+- "ChartViewBase"
+- !private "ChartHighlighter"
+- "UIGestureRecognizer"
+- !private "HorizontalBarChartView"
+- "Transformer"
+- "NSCoder"
+- "Double"
+- "NSUIScrollView"
+- "ChartDataEntry"
+- "NSUIDisplayLink"
+- !private "max"
+- !private "CACurrentMediaTime"
+- "IChartDataSet"
+- !private "abs"
+- "CGPoint"
+- "IBarLineScatterCandleBubbleChartDataSet"
+- !private "CGAffineTransform"
+- !private "RunLoopMode"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps16AbsoluteValuable", "_DisallowMixedSignArithmetic"]
 - ["Ps16AbsoluteValuable", "init"]
 - ["C6Charts19AnimatedMoveViewJob", "deinit"]
 - !private ["C6Charts19AnimatedMoveViewJob", "init"]
@@ -398,6 +399,7 @@ depends-member:
 - ["P6Charts16AnimatorDelegate", "zoomOut"]
 - ["P6Charts16AnimatorDelegate", "zoomToCenter"]
 - ["P6Charts16AnimatorDelegate", ""]
+- !private ["Vs8AnyIndex", "deinit"]
 - !private ["Ps9AnyObject", "AnimatedMoveViewJob"]
 - !private ["Ps9AnyObject", "AnimatedZoomViewJob"]
 - ["Ps9AnyObject", "AxisDependency"]
@@ -1090,6 +1092,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "Iterator"]
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps19BinaryFloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisallowMixedSignArithmetic"]
@@ -2118,6 +2121,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "YAxis"]
 - !private ["Ps28CustomDebugStringConvertible", "YAxisRenderer"]
 - !private ["Ps28CustomDebugStringConvertible", "ZoomViewJob"]
+- !private ["Ps28CustomDebugStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "_autoScaleLastHighestVisibleX"]
 - ["Ps28CustomDebugStringConvertible", "_autoScaleLastLowestVisibleX"]
@@ -2358,7 +2362,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setYAxisMaxWidth"]
 - ["Ps28CustomDebugStringConvertible", "setYAxisMinWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "state"]
 - ["Ps28CustomDebugStringConvertible", "stopDeceleration"]
 - !private ["Ps28CustomDebugStringConvertible", "superview"]
@@ -2408,7 +2411,6 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "origin"]
 - !private ["Ps17CustomReflectable", "size"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps17CustomReflectable", "x"]
 - !private ["Ps17CustomReflectable", "y"]
@@ -2714,14 +2716,15 @@ depends-member:
 - !private ["C6Charts12DataRenderer", "drawValues"]
 - !private ["C6Charts12DataRenderer", "initBuffers"]
 - !private ["V10Foundation4Date", "deinit"]
-- !private ["V10Foundation12DateInterval", "deinit"]
 - !private ["Vs15DictionaryIndex", "deinit"]
 - !private ["CSo14DispatchObject", "async"]
 - !private ["CSo14DispatchObject", "main"]
 - !private ["CSo13DispatchQueue", "async"]
 - ["CSo13DispatchQueue", "deinit"]
 - !private ["CSo13DispatchQueue", "main"]
+- !private ["V8Dispatch16DispatchWallTime", "deinit"]
 - !private ["Sd", "Stride"]
+- !private ["Sd", "_DisallowMixedSignArithmetic"]
 - ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "AnimatedMoveViewJob"]
@@ -3049,13 +3052,13 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps25ExpressibleByFloatLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "both"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps23ExpressibleByNilLiteral", "x"]
 - !private ["Ps23ExpressibleByNilLiteral", "y"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -3066,6 +3069,7 @@ depends-member:
 - !private ["Sf", "Stride"]
 - !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps13FloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "AnimatedMoveViewJob"]
 - !private ["Ps8Hashable", "AnimatedZoomViewJob"]
@@ -3388,6 +3392,9 @@ depends-member:
 - !private ["P6Charts13IChartDataSet", "axisDependency"]
 - !private ["P6Charts12IHighlighter", "init"]
 - ["SQ", "deinit"]
+- !private ["VV10Foundation8IndexSet5Index", "deinit"]
+- !private ["VVSS13CharacterView5Index", "deinit"]
+- !private ["VVSS9UTF16View5Index", "deinit"]
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps13IndexableBase", "Iterator"]
@@ -3431,6 +3438,7 @@ depends-member:
 - !private ["C6Charts14LegendRenderer", "computeLegend"]
 - !private ["C6Charts14LegendRenderer", "renderLegend"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["V10Foundation11Measurement", "deinit"]
@@ -4464,9 +4472,9 @@ depends-member:
 - ["C6Charts8NSUIView", "zoomToCenter"]
 - !private ["CSo9OS_object", "async"]
 - !private ["CSo9OS_object", "main"]
+- !private ["Vs16ObjectIdentifier", "deinit"]
 - !private ["Sq", "both"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Sq", "x"]
 - !private ["Sq", "y"]
 - ["OC6Charts6Legend11Orientation", "horizontal"]
@@ -4520,6 +4528,7 @@ depends-member:
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisallowMixedSignArithmetic"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "Stride"]
@@ -6973,8 +6982,10 @@ depends-member:
 - !private ["Vs5UInt8", "Stride"]
 - !private ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
 - !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
 - !private ["Sp", "deinit"]
 - !private ["SP", "deinit"]
+- !private ["SV", "deinit"]
 - !private ["Ps15UnsignedInteger", "Stride"]
 - !private ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
 - ["OC6Charts6Legend17VerticalAlignment", "bottom"]
@@ -7063,6 +7074,7 @@ depends-member:
 - !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
 - ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "_DisallowMixedSignArithmetic"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "AnimatedMoveViewJob"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "AnimatedZoomViewJob"]
@@ -7270,6 +7282,7 @@ depends-member:
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
@@ -7607,9 +7620,21 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "both"]
 - !private ["Ps21_ObjectiveCBridgeable", "commonModes"]
+- !private ["Ps21_ObjectiveCBridgeable", "concatenating"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "origin"]
+- !private ["Ps21_ObjectiveCBridgeable", "scaledBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "translatedBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "tx"]
+- !private ["Ps21_ObjectiveCBridgeable", "ty"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
 - !private ["Vs26_OptionalNilComparisonType", "both"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Vs26_OptionalNilComparisonType", "x"]
@@ -7629,6 +7654,7 @@ depends-nominal:
 - !private "C6Charts19AnimatedViewPortJob"
 - "C6Charts19AnimatedZoomViewJob"
 - "P6Charts16AnimatorDelegate"
+- !private "Vs8AnyIndex"
 - "Ps9AnyObject"
 - "Sa"
 - "C6Charts8AxisBase"
@@ -7669,10 +7695,10 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - !private "C6Charts12DataRenderer"
 - !private "V10Foundation4Date"
-- !private "V10Foundation12DateInterval"
 - !private "Vs15DictionaryIndex"
 - !private "CSo14DispatchObject"
 - "CSo13DispatchQueue"
+- !private "V8Dispatch16DispatchWallTime"
 - "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
@@ -7680,7 +7706,7 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -7695,6 +7721,9 @@ depends-nominal:
 - !private "P6Charts13IChartDataSet"
 - !private "P6Charts12IHighlighter"
 - "SQ"
+- !private "VV10Foundation8IndexSet5Index"
+- !private "VVSS13CharacterView5Index"
+- !private "VVSS9UTF16View5Index"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
@@ -7727,6 +7756,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - "C6Charts8NSUIView"
 - !private "CSo9OS_object"
+- !private "Vs16ObjectIdentifier"
 - "Sq"
 - "OC6Charts6Legend11Orientation"
 - !private "Ps22RandomAccessCollection"
@@ -7774,8 +7804,10 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
+- !private "Sc"
 - !private "Sp"
 - !private "SP"
+- !private "SV"
 - !private "Ps15UnsignedInteger"
 - "OC6Charts6Legend17VerticalAlignment"
 - !private "C6Charts15ViewPortHandler"
@@ -7813,14 +7845,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "9ac39685b4745b74db2a6cb70ab9d8e4"

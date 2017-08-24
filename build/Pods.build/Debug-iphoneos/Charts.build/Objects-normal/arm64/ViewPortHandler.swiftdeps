@@ -6,94 +6,96 @@ provides-nominal:
 provides-member:
 - ["C6Charts15ViewPortHandler", ""]
 provides-dynamic-lookup:
-- "canZoomInMoreX"
-- "isFullyZoomedOutY"
-- "isInBounds"
-- "restrainViewPort"
-- "contentWidth"
-- "offsetLeft"
-- "isInBoundsBottom"
-- "setZoom"
-- "setZoom"
-- "offsetTop"
-- "setMaximumScaleX"
-- "contentBottom"
-- "setMinMaxScaleY"
-- "minScaleY"
-- "offsetRight"
-- "zoomIn"
-- "offsetBottom"
-- "isInBoundsX"
-- "transX"
-- "isInBoundsLeft"
-- "setDragOffsetY"
-- "canZoomInMoreY"
-- "centerViewPort"
-- "translate"
-- "contentRect"
-- "chartWidth"
-- "contentTop"
-- "zoom"
-- "zoom"
-- "fitScreen"
-- "contentLeft"
-- "zoomOut"
-- "contentRight"
-- "isInBoundsTop"
-- "hasChartDimens"
-- "setMinimumScaleX"
-- "contentCenter"
-- "setMinMaxScaleX"
-- "contentHeight"
-- "isInBoundsY"
-- "maxScaleX"
-- "isFullyZoomedOutX"
-- "chartHeight"
-- "setMaximumScaleY"
-- "setMinimumScaleY"
-- "canZoomOutMoreY"
-- "setChartDimens"
-- "isFullyZoomedOut"
-- "scaleX"
-- "hasNoDragOffset"
-- "scaleY"
-- "touchMatrix"
-- "isInBoundsRight"
-- "maxScaleY"
-- "transY"
-- "setDragOffsetX"
 - "refresh"
+- "contentLeft"
+- "restrainViewPort"
+- "maxScaleX"
+- "centerViewPort"
+- "isFullyZoomedOut"
+- "isInBoundsTop"
+- "setDragOffsetY"
+- "isInBounds"
+- "transX"
+- "contentCenter"
+- "isInBoundsLeft"
+- "offsetRight"
+- "zoom"
+- "zoom"
+- "minScaleY"
+- "isInBoundsX"
+- "setMinMaxScaleY"
+- "offsetTop"
+- "isFullyZoomedOutY"
+- "setChartDimens"
+- "setMinimumScaleY"
+- "offsetLeft"
+- "zoomOut"
+- "maxScaleY"
+- "setZoom"
+- "setZoom"
+- "translate"
+- "canZoomInMoreX"
+- "hasChartDimens"
+- "contentBottom"
+- "touchMatrix"
+- "chartHeight"
 - "minScaleX"
+- "setMinimumScaleX"
+- "setMinMaxScaleX"
+- "hasNoDragOffset"
 - "canZoomOutMoreX"
+- "zoomIn"
+- "contentWidth"
+- "scaleX"
+- "chartWidth"
+- "isInBoundsRight"
+- "setMaximumScaleX"
+- "contentRect"
+- "transY"
+- "canZoomOutMoreY"
+- "offsetBottom"
+- "scaleY"
+- "isFullyZoomedOutX"
+- "contentHeight"
+- "canZoomInMoreY"
+- "contentRight"
+- "contentTop"
+- "isInBoundsY"
+- "setDragOffsetX"
+- "fitScreen"
+- "isInBoundsBottom"
+- "setMaximumScaleY"
 depends-top-level:
-- "CGAffineTransform"
-- !private "min"
-- "CGFloat"
-- !private "max"
-- !private "!="
-- "CGRect"
-- "CGPoint"
+- !private "floor"
+- "Bool"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "*"
-- !private ">="
-- !private "||"
+- !private "+"
 - "ChartViewBase"
+- !private ">="
 - "NSObject"
-- !private "/"
-- !private "<="
-- "ViewPortHandler"
-- !private "-"
-- !private "floor"
-- !private "!"
 - !private ">"
 - !private "&&"
-- "Bool"
-- !private "+"
-- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "!"
+- "ViewPortHandler"
+- "CGAffineTransform"
+- !private "!="
+- "CGPoint"
+- !private "max"
 - !private "<"
+- !private "||"
+- !private "min"
+- !private "*"
+- "CGRect"
+- !private "BooleanLiteralType"
+- !private "-"
+- !private "/"
+- !private "<="
 depends-member:
+- !private ["Ps16AbsoluteValuable", "RawValue"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps16AbsoluteValuable", "_DisallowMixedSignArithmetic"]
 - ["Ps16AbsoluteValuable", "greatestFiniteMagnitude"]
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "setNeedsDisplay"]
@@ -179,7 +181,9 @@ depends-member:
 - ["Ps9AnyObject", "zoomIn"]
 - ["Ps9AnyObject", "zoomOut"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "RawValue"]
 - !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps19BinaryFloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps19BinaryFloatingPoint", "greatestFiniteMagnitude"]
 - ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "Stride"]
@@ -197,7 +201,9 @@ depends-member:
 - !private ["VSC17CGAffineTransform", "translatedBy"]
 - !private ["VSC17CGAffineTransform", "tx"]
 - !private ["VSC17CGAffineTransform", "ty"]
+- !private ["V12CoreGraphics7CGFloat", "RawValue"]
 - !private ["V12CoreGraphics7CGFloat", "Stride"]
+- !private ["V12CoreGraphics7CGFloat", "_DisallowMixedSignArithmetic"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "greatestFiniteMagnitude"]
 - ["V12CoreGraphics7CGFloat", "init"]
@@ -217,6 +223,7 @@ depends-member:
 - ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGPoint"]
 - ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "RawValue"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - ["Ps7CVarArg", "_chartHeight"]
@@ -301,6 +308,7 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "setNeedsDisplay"]
 - ["C6Charts13ChartViewBase", "deinit"]
 - !private ["C6Charts13ChartViewBase", "setNeedsDisplay"]
+- !private ["Ps10Comparable", "RawValue"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
 - ["Ps10Comparable", "greatestFiniteMagnitude"]
@@ -309,7 +317,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
-- !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - ["Ps28CustomDebugStringConvertible", "_chartHeight"]
 - ["Ps28CustomDebugStringConvertible", "_chartWidth"]
 - ["Ps28CustomDebugStringConvertible", "_contentRect"]
@@ -404,6 +411,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -419,6 +427,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGPoint"]
 - ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "RawValue"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
 - ["Ps23CustomStringConvertible", "_chartHeight"]
@@ -501,12 +510,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "zoomIn"]
 - ["Ps23CustomStringConvertible", "zoomOut"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "Stride"]
+- !private ["VSC7Decimal", "deinit"]
 - ["Sd", "deinit"]
 - ["Ps9Equatable", "CGAffineTransform"]
 - ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGPoint"]
 - ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
 - ["Ps9Equatable", "_chartHeight"]
@@ -604,20 +614,26 @@ depends-member:
 - ["Ps9Equatable", "zoomOut"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "RawValue"]
 - !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps25ExpressibleByFloatLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps25ExpressibleByFloatLiteral", "greatestFiniteMagnitude"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps27ExpressibleByIntegerLiteral", "greatestFiniteMagnitude"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps13FloatingPoint", "RawValue"]
 - !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps13FloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps13FloatingPoint", "greatestFiniteMagnitude"]
 - ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "CGAffineTransform"]
 - ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGPoint"]
 - ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - ["Ps8Hashable", "_chartHeight"]
@@ -717,7 +733,6 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Vs15LazyFilterIndex", "deinit"]
-- !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["PSo8NSCoding", "setNeedsDisplay"]
@@ -891,9 +906,12 @@ depends-member:
 - !private ["C6Charts8NSUIView", "setNeedsDisplay"]
 - !private ["Sq", "deinit"]
 - !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "RawValue"]
 - !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisallowMixedSignArithmetic"]
 - ["Ps12SignedNumber", "greatestFiniteMagnitude"]
 - ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "RawValue"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisallowMixedSignArithmetic"]
 - ["Ps10Strideable", "greatestFiniteMagnitude"]
@@ -1009,24 +1027,27 @@ depends-member:
 - ["C6Charts15ViewPortHandler", "zoom"]
 - ["C6Charts15ViewPortHandler", "zoomIn"]
 - ["C6Charts15ViewPortHandler", "zoomOut"]
+- !private ["Ps15_CVarArgAligned", "RawValue"]
 - !private ["Ps15_CVarArgAligned", "Stride"]
 - !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
 - ["Ps15_CVarArgAligned", "greatestFiniteMagnitude"]
 - ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "RawValue"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "_DisallowMixedSignArithmetic"]
 - ["Ps22_CVarArgPassedAsDouble", "greatestFiniteMagnitude"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setNeedsDisplay"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps9_Hashable", "CGAffineTransform"]
 - ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGPoint"]
 - ["Ps9_Hashable", "CGRect"]
+- !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - ["Ps9_Hashable", "_chartHeight"]
@@ -1115,13 +1136,29 @@ depends-member:
 - !private ["Ps8_Integer", "_DisallowMixedSignArithmetic"]
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "a"]
+- !private ["Ps21_ObjectiveCBridgeable", "concatenating"]
+- !private ["Ps21_ObjectiveCBridgeable", "d"]
 - ["Ps21_ObjectiveCBridgeable", "greatestFiniteMagnitude"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- ["Ps21_ObjectiveCBridgeable", "identity"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "origin"]
+- !private ["Ps21_ObjectiveCBridgeable", "scaledBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "translatedBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "tx"]
+- !private ["Ps21_ObjectiveCBridgeable", "ty"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "RawValue"]
 - !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
 - ["Ps11_Strideable", "greatestFiniteMagnitude"]
@@ -1150,6 +1187,7 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "VSC7Decimal"
 - "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -1200,7 +1238,6 @@ depends-nominal:
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
@@ -1215,14 +1252,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "adde42d377fdac05b603f212491f9053"

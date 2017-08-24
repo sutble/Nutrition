@@ -7,24 +7,24 @@ provides-member:
 - ["C6Charts16DataApproximator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- !private "+"
-- "CGFloat"
-- !private "/"
 - !private ">"
-- "AssignmentPrecedence"
-- !private "-"
-- !private "..<"
+- !private "abs"
+- !private "||"
+- !private "<="
 - !private "<"
+- !private "..<"
+- "AssignmentPrecedence"
+- !private "+"
+- "Bool"
+- !private "/"
+- "CGFloat"
+- !private "-"
 - "Int"
 - "DataApproximator"
-- !private "*"
-- !private "abs"
-- !private "<="
-- !private "||"
-- !private "sqrt"
-- "NSObject"
 - !private "BooleanLiteralType"
+- "NSObject"
+- !private "*"
+- !private "sqrt"
 - "CGPoint"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -566,8 +566,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"

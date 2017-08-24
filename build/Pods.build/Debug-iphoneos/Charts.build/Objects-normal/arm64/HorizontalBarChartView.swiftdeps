@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C6Charts22HorizontalBarChartView", ""]
 provides-dynamic-lookup:
-- "getBarBounds"
-- "setVisibleXRangeMinimum"
-- "getPosition"
-- "setVisibleYRange"
-- "initialize"
 - "setVisibleYRangeMinimum"
-- "calculateOffsets"
-- "highestVisibleX"
-- "getMarkerPosition"
-- "getHighlightByTouchPoint"
-- "setVisibleXRangeMaximum"
-- "setVisibleYRangeMaximum"
-- "prepareValuePxMatrix"
 - "setVisibleXRange"
+- "getPosition"
+- "getHighlightByTouchPoint"
+- "highestVisibleX"
+- "initialize"
 - "lowestVisibleX"
+- "calculateOffsets"
+- "setVisibleYRange"
+- "getBarBounds"
+- "prepareValuePxMatrix"
+- "setVisibleYRangeMaximum"
+- "getMarkerPosition"
+- "setVisibleXRangeMinimum"
+- "setVisibleXRangeMaximum"
 depends-top-level:
-- !private "HorizontalBarChartRenderer"
-- !private "HorizontalBarHighlighter"
-- !private "-"
-- !private "CGFloat"
-- !private "TransformerHorizontalBarChart"
+- !private "Swift"
 - "TernaryPrecedence"
 - "HorizontalBarChartView"
-- "BarChartDataEntry"
-- !private "<="
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- !private "+="
-- !private "UnicodeScalarType"
-- "Highlight"
-- !private "+"
-- !private "BarChartData"
-- !private "/"
-- "CGPoint"
-- "CGRect"
-- !private ">="
-- !private "Swift"
-- !private "StringLiteralType"
-- "BarChartView"
 - !private "IBarChartDataSet"
-- !private "XAxisRendererHorizontalBarChart"
-- "Double"
-- !private "max"
-- "ChartDataEntry"
-- !private "YAxisRendererHorizontalBarChart"
-- "YAxis"
-- !private "min"
+- !private "TransformerHorizontalBarChart"
+- !private "<="
+- "CGPoint"
+- !private "+="
 - !private "==="
+- !private "+"
+- !private "UnicodeScalarType"
+- !private "HorizontalBarHighlighter"
+- "CGRect"
+- "BarChartView"
+- "AssignmentPrecedence"
+- !private "CGFloat"
+- "CastingPrecedence"
+- !private "=="
+- !private "YAxisRendererHorizontalBarChart"
+- !private "/"
+- "Double"
+- !private "-"
+- !private "min"
+- !private "max"
+- !private "XAxisRendererHorizontalBarChart"
+- "ChartDataEntry"
+- "Highlight"
+- !private ">="
+- !private "StringLiteralType"
+- !private "BarChartData"
+- "BarChartDataEntry"
+- "YAxis"
+- !private "HorizontalBarChartRenderer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "CGFloat"]
@@ -792,7 +792,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setVisibleYRange"]
 - ["Ps28CustomDebugStringConvertible", "setVisibleYRangeMaximum"]
 - ["Ps28CustomDebugStringConvertible", "setVisibleYRangeMinimum"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "xAxis"]
@@ -806,7 +805,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "null"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "x"]
 - !private ["Ps17CustomReflectable", "y"]
 - ["Ps23CustomStringConvertible", "AxisDependency"]
@@ -987,7 +985,6 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -1448,7 +1445,6 @@ depends-member:
 - !private ["C6Charts8NSUIView", "viewPortHandler"]
 - !private ["C6Charts8NSUIView", "xAxis"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "bothSided"]
 - !private ["Ps16RawRepresentable", "bottom"]
@@ -2294,6 +2290,9 @@ depends-member:
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "null"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
@@ -2327,7 +2326,7 @@ depends-nominal:
 - "C6Charts13ComponentBase"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Sd"
 - "Ps9Equatable"
@@ -2335,7 +2334,6 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -2406,14 +2404,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "1ec759c98b60bb693ac261d8bd21adb7"

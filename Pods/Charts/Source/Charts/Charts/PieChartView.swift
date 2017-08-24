@@ -174,7 +174,6 @@ open class PieChartView: PieRadarChartViewBase
         // calculate the text position
         let x: CGFloat = (r * cos(((rotationAngle + absoluteAngles[entryIndex] - offset) * CGFloat(_animator.phaseY)) * ChartUtils.Math.FDEG2RAD) + center.x)
         let y: CGFloat = (r * sin(((rotationAngle + absoluteAngles[entryIndex] - offset) * CGFloat(_animator.phaseY)) * ChartUtils.Math.FDEG2RAD) + center.y)
-        
         return CGPoint(x: x, y: y)
     }
     
@@ -478,6 +477,11 @@ open class PieChartView: PieRadarChartViewBase
     /// - returns: The center of the circlebox
     open var centerCircleBox: CGPoint
     {
+        /*
+        print("Center Coordinates")
+        print(_circleBox.midX)
+        print(_circleBox.midY)
+        */
         return CGPoint(x: _circleBox.midX, y: _circleBox.midY)
     }
     

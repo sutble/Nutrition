@@ -12,45 +12,46 @@ provides-member:
 - ["V6Charts15EasingFunctions", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "easingFunctionFromOption"
-- "AssignmentPrecedence"
-- "TimeInterval"
-- "+"
-- "ChartEasingFunctionBlock"
-- "asin"
-- "Int"
-- "Double"
-- "-"
-- "ChartEasingOption"
-- "sqrt"
-- "pow"
-- "M_PI"
-- "cos"
 - "TernaryPrecedence"
-- "*"
-- "sin"
-- "/"
+- "Double"
+- "+"
+- "pow"
+- "asin"
 - "*="
-- !private "~="
-- "EasingFunctions"
+- "cos"
 - "M_PI_2"
 - "=="
-- "-="
+- !private "~="
+- "AssignmentPrecedence"
+- "Int"
+- "TimeInterval"
+- "ChartEasingFunctionBlock"
+- "easingFunctionFromOption"
+- "sin"
+- "sqrt"
+- "M_PI"
+- "*"
+- "EasingFunctions"
 - "<"
+- "/"
+- "ChartEasingOption"
+- "-"
+- "-="
 depends-member:
+- ["Ps16AbsoluteValuable", "RawValue"]
 - ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
+- ["Ps19BinaryFloatingPoint", "RawValue"]
 - ["Ps19BinaryFloatingPoint", "Stride"]
 - ["Ps19BinaryFloatingPoint", "init"]
-- ["Ps17BitwiseOperations", "Stride"]
-- ["Ps17BitwiseOperations", "_DisallowMixedSignArithmetic"]
+- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["V12CoreGraphics7CGFloat", "Stride"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- ["Ps7CVarArg", "RawValue"]
 - ["Ps7CVarArg", "Stride"]
-- ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
 - ["O6Charts17ChartEasingOption", "RawValue"]
@@ -91,32 +92,32 @@ depends-member:
 - ["O6Charts17ChartEasingOption", "linear"]
 - ["O6Charts17ChartEasingOption", "rawValue"]
 - !private ["Vs11ClosedRange", "deinit"]
+- ["Ps10Comparable", "RawValue"]
 - ["Ps10Comparable", "Stride"]
-- ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
+- ["Ps28CustomDebugStringConvertible", "RawValue"]
 - ["Ps28CustomDebugStringConvertible", "Stride"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps29CustomPlaygroundQuickLookable", "RawValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- ["Ps29CustomPlaygroundQuickLookable", "_DisallowMixedSignArithmetic"]
 - ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "RawValue"]
 - ["Ps17CustomReflectable", "Stride"]
-- ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
 - ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "RawValue"]
 - ["Ps23CustomStringConvertible", "Stride"]
-- ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
 - ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["VSC7Decimal", "Stride"]
-- ["VSC7Decimal", "deinit"]
 - ["O8Dispatch20DispatchTimeInterval", "deinit"]
+- ["Sd", "RawValue"]
 - ["Sd", "Stride"]
 - ["Sd", "deinit"]
 - ["Sd", "init"]
@@ -163,7 +164,6 @@ depends-member:
 - ["V6Charts15EasingFunctions", "sqrt"]
 - ["Ps9Equatable", "RawValue"]
 - ["Ps9Equatable", "Stride"]
-- ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
 - ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "easeInBack"]
@@ -202,19 +202,20 @@ depends-member:
 - ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", ""]
 - ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps25ExpressibleByFloatLiteral", "RawValue"]
 - ["Ps25ExpressibleByFloatLiteral", "Stride"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
+- ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - ["Sf", "Stride"]
 - ["Sf", "deinit"]
+- ["Ps13FloatingPoint", "RawValue"]
 - ["Ps13FloatingPoint", "Stride"]
 - ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "RawValue"]
 - ["Ps8Hashable", "Stride"]
-- ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "easeInBack"]
@@ -252,31 +253,24 @@ depends-member:
 - ["Ps8Hashable", "linear"]
 - ["Ps8Hashable", "rawValue"]
 - ["Ps8Hashable", ""]
-- ["V10Foundation9IndexPath", "deinit"]
-- ["Si", "Stride"]
+- !private ["Si", "Stride"]
 - ["Si", "deinit"]
 - !private ["Si", "hashValue"]
-- ["Vs5Int16", "Stride"]
 - ["Vs5Int16", "deinit"]
-- ["Vs5Int32", "Stride"]
 - ["Vs5Int32", "deinit"]
-- ["Vs5Int64", "Stride"]
 - ["Vs5Int64", "deinit"]
-- ["Vs4Int8", "Stride"]
 - ["Vs4Int8", "deinit"]
-- ["Ps7Integer", "Stride"]
-- ["Ps7Integer", "_DisallowMixedSignArithmetic"]
+- !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "hashValue"]
-- ["Ps17IntegerArithmetic", "Stride"]
-- ["Ps17IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
+- ["Ps25LosslessStringConvertible", "RawValue"]
 - ["Ps25LosslessStringConvertible", "Stride"]
 - ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["V10Foundation11Measurement", "deinit"]
-- ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "hashValue"]
-- ["CSo8NSNumber", "deinit"]
 - ["Sq", "deinit"]
 - !private ["Vs5Range", "deinit"]
 - ["Ps16RawRepresentable", "RawValue"]
@@ -316,52 +310,39 @@ depends-member:
 - ["Ps16RawRepresentable", "linear"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", ""]
-- ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "hashValue"]
+- ["Ps12SignedNumber", "RawValue"]
 - ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - ["Ps12SignedNumber", "init"]
+- ["Ps10Strideable", "RawValue"]
 - ["Ps10Strideable", "Stride"]
-- ["Ps10Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps10Strideable", "hashValue"]
 - ["Ps10Strideable", "init"]
-- ["SS", "deinit"]
-- ["Su", "Stride"]
-- ["Su", "_DisallowMixedSignArithmetic"]
 - ["Su", "deinit"]
-- ["Vs6UInt16", "Stride"]
-- ["Vs6UInt16", "_DisallowMixedSignArithmetic"]
 - ["Vs6UInt16", "deinit"]
-- ["Vs6UInt32", "Stride"]
-- ["Vs6UInt32", "_DisallowMixedSignArithmetic"]
 - ["Vs6UInt32", "deinit"]
-- ["Vs6UInt64", "Stride"]
-- ["Vs6UInt64", "_DisallowMixedSignArithmetic"]
 - ["Vs6UInt64", "deinit"]
-- ["Vs5UInt8", "Stride"]
-- ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
 - ["Vs5UInt8", "deinit"]
 - ["Sp", "deinit"]
 - ["SP", "deinit"]
-- ["Ps15UnsignedInteger", "Stride"]
-- ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
+- ["Ps15_CVarArgAligned", "RawValue"]
 - ["Ps15_CVarArgAligned", "Stride"]
-- ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
 - ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "RawValue"]
 - ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
-- ["Ps28_DisallowMixedSignArithmetic", "Stride"]
-- ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
 - ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps33_ExpressibleByBuiltinFloatLiteral", "RawValue"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- ["Ps35_ExpressibleByBuiltinIntegerLiteral", "RawValue"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - ["Ps9_Hashable", "RawValue"]
 - ["Ps9_Hashable", "Stride"]
-- ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "easeInBack"]
@@ -399,33 +380,28 @@ depends-member:
 - ["Ps9_Hashable", "linear"]
 - ["Ps9_Hashable", "rawValue"]
 - ["Ps9_Hashable", ""]
-- ["Ps14_Incrementable", "Stride"]
-- ["Ps14_Incrementable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "hashValue"]
-- ["Ps8_Integer", "Stride"]
-- ["Ps8_Integer", "_DisallowMixedSignArithmetic"]
+- !private ["Ps8_Integer", "Stride"]
 - !private ["Ps8_Integer", "hashValue"]
-- ["Ps18_IntegerArithmetic", "Stride"]
-- ["Ps18_IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - ["Ps21_ObjectiveCBridgeable", "Stride"]
-- ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
 - ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
-- ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "hashValue"]
+- ["Ps11_Strideable", "RawValue"]
 - ["Ps11_Strideable", "Stride"]
-- ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps11_Strideable", "hashValue"]
 - ["Ps11_Strideable", "init"]
-- ["Ps14_StringElement", "Stride"]
-- ["Ps14_StringElement", "_DisallowMixedSignArithmetic"]
 depends-nominal:
 - "Ps16AbsoluteValuable"
 - "Ps19BinaryFloatingPoint"
-- "Ps17BitwiseOperations"
+- !private "Ps17BitwiseOperations"
 - "Sb"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
@@ -438,7 +414,6 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "VSC7Decimal"
 - "O8Dispatch20DispatchTimeInterval"
 - "Sd"
 - "V6Charts15EasingFunctions"
@@ -449,25 +424,22 @@ depends-nominal:
 - "Sf"
 - "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "V10Foundation9IndexPath"
 - "Si"
 - "Vs5Int16"
 - "Vs5Int32"
 - "Vs5Int64"
 - "Vs4Int8"
-- "Ps7Integer"
-- "Ps17IntegerArithmetic"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
 - "Ps25LosslessStringConvertible"
 - "V10Foundation11Measurement"
-- "Ps10MirrorPath"
-- "CSo8NSNumber"
+- !private "Ps10MirrorPath"
 - "Sq"
 - !private "Vs5Range"
 - "Ps16RawRepresentable"
-- "Ps13SignedInteger"
+- !private "Ps13SignedInteger"
 - "Ps12SignedNumber"
 - "Ps10Strideable"
-- "SS"
 - "Su"
 - "Vs6UInt16"
 - "Vs6UInt32"
@@ -475,33 +447,31 @@ depends-nominal:
 - "Vs5UInt8"
 - "Sp"
 - "SP"
-- "Ps15UnsignedInteger"
 - "Ps15_CVarArgAligned"
 - "Ps22_CVarArgPassedAsDouble"
-- "Ps28_DisallowMixedSignArithmetic"
 - "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps33_ExpressibleByBuiltinFloatLiteral"
 - "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps9_Hashable"
-- "Ps14_Incrementable"
-- "Ps8_Integer"
-- "Ps18_IntegerArithmetic"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
 - "Vs26_OptionalNilComparisonType"
-- "Ps14_SignedInteger"
+- !private "Ps14_SignedInteger"
 - "Ps11_Strideable"
-- "Ps14_StringElement"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "b9a8580708f59ae227b836b4fd66fb48"

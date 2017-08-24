@@ -7,39 +7,39 @@ provides-member:
 - ["C6Charts19AnimatedViewPortJob", ""]
 provides-dynamic-lookup:
 - "animationEnd"
-- "doJob"
 - "start"
-- "yOrigin"
-- "animationLoop"
 - "phase"
+- "yOrigin"
 - "xOrigin"
-- "animationUpdate"
 - "stop"
+- "animationUpdate"
+- "doJob"
+- "animationLoop"
 depends-top-level:
-- "TernaryPrecedence"
 - !private "RunLoopMode"
-- !private "RunLoop"
-- !private "+"
-- "ViewPortHandler"
-- "AnimatedViewPortJob"
-- !private "/"
-- !private "StringLiteralType"
-- !private ">="
-- !private "BooleanLiteralType"
-- !private "CACurrentMediaTime"
-- "ViewPortJob"
-- !private ">"
-- !private "!="
-- "NSUIDisplayLink"
-- !private "-"
-- "ChartEasingFunctionBlock"
-- "AssignmentPrecedence"
-- "Bool"
-- "TimeInterval"
-- "ChartViewBase"
+- "TernaryPrecedence"
 - "Double"
+- "ViewPortHandler"
+- "ChartViewBase"
+- !private ">="
 - "Transformer"
+- "ViewPortJob"
+- !private "/"
+- "AssignmentPrecedence"
 - "CGFloat"
+- !private "RunLoop"
+- !private "-"
+- !private "CACurrentMediaTime"
+- "NSUIDisplayLink"
+- !private "+"
+- !private ">"
+- "TimeInterval"
+- "Bool"
+- !private "StringLiteralType"
+- "ChartEasingFunctionBlock"
+- !private "BooleanLiteralType"
+- "AnimatedViewPortJob"
+- !private "!="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["C6Charts19AnimatedViewPortJob", "Bool"]
@@ -279,7 +279,6 @@ depends-member:
 - ["CSo8NSObject", "animationEnd"]
 - ["CSo8NSObject", "animationLoop"]
 - ["CSo8NSObject", "animationUpdate"]
-- !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "doJob"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "main"]
@@ -470,14 +469,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "1404d64249aaf0ac0665ff4a2e527e2a"

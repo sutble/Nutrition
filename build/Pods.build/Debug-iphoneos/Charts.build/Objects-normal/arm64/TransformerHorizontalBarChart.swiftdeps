@@ -8,14 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "prepareMatrixOffset"
 depends-top-level:
-- "Transformer"
-- "TransformerHorizontalBarChart"
-- !private "CGAffineTransform"
-- !private "!"
-- !private "-"
 - "Bool"
 - "AssignmentPrecedence"
+- "Transformer"
+- "TransformerHorizontalBarChart"
+- !private "-"
+- !private "!"
+- !private "CGAffineTransform"
 depends-member:
+- !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]
 - !private ["Ps9AnyObject", "_matrixOffset"]
 - !private ["Ps9AnyObject", "_viewPortHandler"]
@@ -27,13 +28,16 @@ depends-member:
 - !private ["Ps9AnyObject", "offsetRight"]
 - ["Ps9AnyObject", "prepareMatrixOffset"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["VSC17CGAffineTransform", "deinit"]
 - !private ["VSC17CGAffineTransform", "init"]
 - !private ["VSC17CGAffineTransform", "translatedBy"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps7CVarArg", "CGAffineTransform"]
+- !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "_matrixOffset"]
 - !private ["Ps7CVarArg", "_viewPortHandler"]
 - !private ["Ps7CVarArg", "chartHeight"]
@@ -44,7 +48,9 @@ depends-member:
 - !private ["Ps7CVarArg", "offsetRight"]
 - ["Ps7CVarArg", "prepareMatrixOffset"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "CGAffineTransform"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "_matrixOffset"]
 - !private ["Ps28CustomDebugStringConvertible", "_viewPortHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "chartHeight"]
@@ -55,9 +61,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "offsetRight"]
 - ["Ps28CustomDebugStringConvertible", "prepareMatrixOffset"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "CGAffineTransform"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "_matrixOffset"]
 - !private ["Ps23CustomStringConvertible", "_viewPortHandler"]
@@ -69,7 +78,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "offsetRight"]
 - ["Ps23CustomStringConvertible", "prepareMatrixOffset"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGAffineTransform"]
+- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "_matrixOffset"]
 - !private ["Ps9Equatable", "_viewPortHandler"]
@@ -83,7 +95,13 @@ depends-member:
 - !private ["Ps9Equatable", "translatedBy"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Sf", "Stride"]
+- !private ["Sf", "deinit"]
+- !private ["Ps13FloatingPoint", "Stride"]
 - !private ["Ps8Hashable", "CGAffineTransform"]
+- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "_matrixOffset"]
 - !private ["Ps8Hashable", "_viewPortHandler"]
@@ -95,6 +113,7 @@ depends-member:
 - !private ["Ps8Hashable", "offsetRight"]
 - ["Ps8Hashable", "prepareMatrixOffset"]
 - ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGAffineTransform"]
@@ -117,6 +136,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "offsetRight"]
 - ["PSo16NSObjectProtocol", "prepareMatrixOffset"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps10Strideable", "Stride"]
 - ["C6Charts11Transformer", "Bool"]
 - !private ["C6Charts11Transformer", "CGAffineTransform"]
 - !private ["C6Charts11Transformer", "_matrixOffset"]
@@ -138,8 +159,13 @@ depends-member:
 - !private ["C6Charts15ViewPortHandler", "offsetBottom"]
 - !private ["C6Charts15ViewPortHandler", "offsetLeft"]
 - !private ["C6Charts15ViewPortHandler", "offsetRight"]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps9_Hashable", "CGAffineTransform"]
+- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "_matrixOffset"]
 - !private ["Ps9_Hashable", "_viewPortHandler"]
@@ -151,40 +177,60 @@ depends-member:
 - !private ["Ps9_Hashable", "offsetRight"]
 - ["Ps9_Hashable", "prepareMatrixOffset"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "translatedBy"]
+- !private ["Ps11_Strideable", "Stride"]
 depends-nominal:
+- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
 - "Sb"
 - "VSC17CGAffineTransform"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Sf"
+- !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
 - "C6Charts11Transformer"
 - "C6Charts29TransformerHorizontalBarChart"
 - "C6Charts15ViewPortHandler"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "b2c75a51376b969d170ae7103bde8117"

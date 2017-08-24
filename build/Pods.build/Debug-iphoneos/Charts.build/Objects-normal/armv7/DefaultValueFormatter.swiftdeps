@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C6Charts21DefaultValueFormatter", ""]
 provides-dynamic-lookup:
+- "with"
+- "formatter"
 - "hasAutoDecimals"
 - "block"
-- "with"
 - "stringForValue"
-- "formatter"
 depends-top-level:
-- "AssignmentPrecedence"
 - "ChartDataEntry"
-- "IValueFormatter"
-- "DefaultValueFormatter"
-- !private "??"
-- !private "!="
-- "Int"
 - "Double"
-- "ViewPortHandler"
-- !private "StringLiteralType"
-- "NSObject"
-- "Bool"
+- "IValueFormatter"
+- "AssignmentPrecedence"
 - "String"
+- !private "!="
 - "NumberFormatter"
+- "Int"
 - "BooleanLiteralType"
+- "Bool"
+- !private "??"
+- "NSObject"
+- "ViewPortHandler"
+- "DefaultValueFormatter"
 - !private "NSNumber"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "DefaultValueFormatter"]
 - !private ["Ps9AnyObject", "NSNumber"]
@@ -345,8 +345,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"

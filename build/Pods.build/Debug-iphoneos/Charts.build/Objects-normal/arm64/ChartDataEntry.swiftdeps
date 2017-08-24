@@ -7,33 +7,35 @@ provides-nominal:
 provides-member:
 - ["C6Charts14ChartDataEntry", ""]
 provides-dynamic-lookup:
-- "isEqual"
 - "copyWithZone"
+- "isEqual"
 - "description"
 - "x"
 depends-top-level:
+- !private "DBL_EPSILON"
+- "ChartDataEntryBase"
+- !private "!=="
+- !private "-"
+- "String"
+- "Double"
 - "Bool"
 - !private "==="
-- !private "StringLiteralType"
-- !private ">"
-- "ChartDataEntryBase"
-- "Double"
-- !private "BooleanLiteralType"
-- !private "DBL_EPSILON"
-- "String"
-- !private "!=="
-- "ChartDataEntry"
-- !private "&&"
-- !private "-"
-- "AnyObject"
-- "NSZone"
-- !private "!"
-- !private "fabs"
 - "=="
 - "AssignmentPrecedence"
+- !private "&&"
+- !private "!"
 - "CastingPrecedence"
+- "ChartDataEntry"
+- !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- !private ">"
+- !private "fabs"
+- "NSZone"
+- "AnyObject"
 depends-member:
+- !private ["Ps16AbsoluteValuable", "RawValue"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps16AbsoluteValuable", "_DisallowMixedSignArithmetic"]
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "DBL_EPSILON"]
 - ["Ps9AnyObject", "Double"]
@@ -48,13 +50,17 @@ depends-member:
 - ["Ps9AnyObject", "x"]
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "RawValue"]
 - !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps19BinaryFloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "DBL_EPSILON"]
 - ["Ps7CVarArg", "Double"]
+- !private ["Ps7CVarArg", "RawValue"]
 - !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - ["Ps7CVarArg", "copyWithZone"]
 - !private ["Ps7CVarArg", "data"]
 - ["Ps7CVarArg", "description"]
@@ -99,11 +105,15 @@ depends-member:
 - ["C6Charts18ChartDataEntryBase", "x"]
 - !private ["C6Charts18ChartDataEntryBase", "y"]
 - ["C6Charts18ChartDataEntryBase", ""]
+- !private ["Ps10Comparable", "RawValue"]
 - !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DBL_EPSILON"]
 - ["Ps28CustomDebugStringConvertible", "Double"]
+- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "_DisallowMixedSignArithmetic"]
 - ["Ps28CustomDebugStringConvertible", "copyWithZone"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - ["Ps28CustomDebugStringConvertible", "description"]
@@ -114,15 +124,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "RawValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "DBL_EPSILON"]
 - ["Ps23CustomStringConvertible", "Double"]
+- !private ["Ps23CustomStringConvertible", "RawValue"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "copyWithZone"]
 - !private ["Ps23CustomStringConvertible", "data"]
@@ -134,12 +150,16 @@ depends-member:
 - ["Ps23CustomStringConvertible", "x"]
 - !private ["Ps23CustomStringConvertible", "y"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "RawValue"]
 - !private ["Sd", "Stride"]
+- !private ["Sd", "_DisallowMixedSignArithmetic"]
 - ["Sd", "deinit"]
 - ["Sd", "init"]
 - !private ["Ps9Equatable", "DBL_EPSILON"]
 - ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "copyWithZone"]
 - !private ["Ps9Equatable", "data"]
@@ -153,19 +173,27 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "RawValue"]
 - !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps25ExpressibleByFloatLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "deinit"]
+- !private ["Ps13FloatingPoint", "RawValue"]
 - !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps13FloatingPoint", "_DisallowMixedSignArithmetic"]
 - ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "DBL_EPSILON"]
 - ["Ps8Hashable", "Double"]
+- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "copyWithZone"]
 - !private ["Ps8Hashable", "data"]
@@ -183,7 +211,9 @@ depends-member:
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "RawValue"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -221,11 +251,15 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - ["Os5Never", "deinit"]
 - ["Sq", "deinit"]
+- !private ["Ps12SignedNumber", "RawValue"]
 - !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisallowMixedSignArithmetic"]
 - ["Ps12SignedNumber", "init"]
 - ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
+- !private ["Ps10Strideable", "RawValue"]
 - !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisallowMixedSignArithmetic"]
 - ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -237,15 +271,23 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["Ps15_CVarArgAligned", "RawValue"]
 - !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
 - ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "RawValue"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "_DisallowMixedSignArithmetic"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "RawValue"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "RawValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
@@ -253,7 +295,9 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "DBL_EPSILON"]
 - ["Ps9_Hashable", "Double"]
+- !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "copyWithZone"]
 - !private ["Ps9_Hashable", "data"]
@@ -265,10 +309,14 @@ depends-member:
 - ["Ps9_Hashable", "x"]
 - !private ["Ps9_Hashable", "y"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps11_Strideable", "RawValue"]
 - !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
 - ["Ps11_Strideable", "init"]
 depends-nominal:
 - "Ps16AbsoluteValuable"
@@ -343,14 +391,15 @@ depends-dynamic-lookup:
 - !private "x"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "264c8385b4a7ce4862a4831a46326f7f"

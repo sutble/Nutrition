@@ -6,98 +6,98 @@ provides-nominal:
 provides-member:
 - ["C6Charts12PieChartView", ""]
 provides-dynamic-lookup:
-- "draw"
-- "calculateOffsets"
-- "drawEntryLabelsEnabled"
-- "drawSlicesUnderHoleEnabled"
-- "centerText"
-- "getMarkerPosition"
-- "absoluteAngles"
 - "isDrawCenterTextEnabled"
-- "centerCircleBox"
-- "radius"
-- "needsHighlight"
-- "maxAngle"
-- "centerAttributedText"
-- "initialize"
-- "drawHoleEnabled"
-- "transparentCircleColor"
-- "centerTextOffset"
 - "requiredLegendOffset"
-- "transparentCircleRadiusPercent"
-- "entryLabelColor"
-- "isDrawHoleEnabled"
-- "holeColor"
-- "indexForAngle"
+- "maxAngle"
 - "xAxis"
-- "entryLabelFont"
-- "requiredBaseOffset"
-- "dataSetIndexForIndex"
-- "holeRadiusPercent"
-- "isDrawSliceTextEnabled"
-- "drawAngles"
-- "drawCenterTextEnabled"
-- "circleBox"
-- "usePercentValuesEnabled"
-- "drawSliceTextEnabled"
+- "centerText"
 - "isDrawEntryLabelsEnabled"
+- "drawAngles"
+- "initialize"
+- "calculateOffsets"
+- "drawCenterTextEnabled"
+- "entryLabelColor"
+- "centerCircleBox"
+- "drawEntryLabelsEnabled"
+- "dataSetIndexForIndex"
+- "drawSlicesUnderHoleEnabled"
 - "isUsePercentValuesEnabled"
-- "centerTextRadiusPercent"
-- "calcMinMax"
+- "getMarkerPosition"
 - "isDrawSlicesUnderHoleEnabled"
+- "calcMinMax"
+- "entryLabelFont"
+- "centerTextRadiusPercent"
+- "centerAttributedText"
+- "isDrawSliceTextEnabled"
+- "holeRadiusPercent"
+- "drawHoleEnabled"
+- "requiredBaseOffset"
+- "needsHighlight"
+- "indexForAngle"
+- "circleBox"
+- "radius"
+- "absoluteAngles"
+- "centerTextOffset"
+- "transparentCircleColor"
+- "transparentCircleRadiusPercent"
+- "drawSliceTextEnabled"
+- "usePercentValuesEnabled"
+- "draw"
+- "holeColor"
+- "isDrawHoleEnabled"
 depends-top-level:
+- "Int"
+- !private "PieChartRenderer"
+- !private "-"
+- !private "Array"
+- !private "NSParagraphStyle"
+- !private "<"
+- !private "NSMutableParagraphStyle"
+- "NSAttributedString"
 - "CGRect"
-- "Double"
-- !private "sin"
 - "CGFloat"
-- !private "NSMutableAttributedString"
-- "NSUIFont"
 - !private "*"
+- !private "abs"
 - !private "==="
-- !private "Dictionary"
 - !private "cos"
+- "StringLiteralType"
+- "NSUIColor"
+- "BooleanLiteralType"
+- !private "..<"
+- !private "NSMutableAttributedString"
+- !private "!"
 - !private "PieChartData"
+- "Bool"
+- !private "??"
+- !private "fatalError"
+- !private "NSForegroundColorAttributeName"
+- "/"
+- !private ">"
+- !private "NSUIGraphicsGetCurrentContext"
+- "AssignmentPrecedence"
+- !private "NSLineBreakMode"
+- "PieRadarChartViewBase"
+- "CastingPrecedence"
+- !private "sin"
+- "CGPoint"
+- !private "NSParagraphStyleAttributeName"
+- "PieChartView"
+- !private "=="
+- !private "!=="
 - !private "PieHighlighter"
 - !private "+="
-- !private "NSUIGraphicsGetCurrentContext"
-- !private "NSLineBreakMode"
-- "NSUIColor"
-- "StringLiteralType"
-- !private "!=="
-- !private "<"
 - !private "-="
-- !private "+"
-- !private "PieChartRenderer"
-- !private "NSMakeRange"
-- !private "-"
-- !private "??"
-- "String"
-- !private "NSParagraphStyleAttributeName"
-- "BooleanLiteralType"
-- !private "abs"
-- "Bool"
-- !private "Array"
-- !private "fatalError"
-- !private ">"
-- "PieChartView"
-- "/"
-- !private "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "CGPoint"
 - "NSCoder"
-- !private "NSForegroundColorAttributeName"
-- "NSAttributedString"
-- !private "NSParagraphStyle"
-- "XAxis"
-- !private "NSFontAttributeName"
+- !private "NSMakeRange"
+- !private "Dictionary"
+- "NSUIFont"
 - "Highlight"
-- !private "..<"
 - !private "ChartUtils"
-- !private "NSMutableParagraphStyle"
-- !private "!"
-- "Int"
-- "PieRadarChartViewBase"
+- !private "NSFontAttributeName"
+- !private "+"
+- "Double"
+- "XAxis"
+- "String"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - ["Ps16AbsoluteValuable", "init"]
@@ -342,6 +342,9 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "reserveCapacity"]
 - !private ["Sa", "subscript"]
+- !private ["Vs10ArraySlice", "Iterator"]
+- !private ["Vs10ArraySlice", "_Element"]
+- !private ["Vs10ArraySlice", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
@@ -1011,7 +1014,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setNeedsDisplay"]
 - !private ["Ps28CustomDebugStringConvertible", "sin"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFont"]
@@ -1062,7 +1064,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "origin"]
 - !private ["Ps17CustomReflectable", "reserveCapacity"]
 - !private ["Ps17CustomReflectable", "size"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps17CustomReflectable", "x"]
@@ -1391,11 +1392,9 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "nan"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "Stride"]
 - ["Ps13FloatingPoint", "init"]
 - !private ["Ps13FloatingPoint", "nan"]
@@ -1616,6 +1615,7 @@ depends-member:
 - ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "reserveCapacity"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Vs12MutableSlice", "deinit"]
 - !private ["CSo18NSAttributedString", "init"]
 - !private ["CSo18NSAttributedString", "length"]
 - !private ["CSo18NSAttributedString", "setAttributes"]
@@ -2143,7 +2143,6 @@ depends-member:
 - ["C6Charts8NSUIView", "xAxis"]
 - ["Os5Never", "deinit"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["C6Charts12PieChartData", "dataSet"]
 - ["C6Charts12PieChartData", "deinit"]
 - !private ["C6Charts12PieChartData", "yValueSum"]
@@ -3893,10 +3892,18 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "midX"]
+- !private ["Ps21_ObjectiveCBridgeable", "midY"]
 - !private ["Ps21_ObjectiveCBridgeable", "nan"]
+- !private ["Ps21_ObjectiveCBridgeable", "origin"]
 - !private ["Ps21_ObjectiveCBridgeable", "reserveCapacity"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -3913,6 +3920,7 @@ depends-nominal:
 - "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
 - "Sa"
+- !private "Vs10ArraySlice"
 - "Ps23BidirectionalCollection"
 - "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
@@ -3953,11 +3961,9 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "C6Charts9Highlight"
@@ -3979,6 +3985,7 @@ depends-nominal:
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
+- !private "Vs12MutableSlice"
 - !private "CSo18NSAttributedString"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
@@ -4059,14 +4066,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "e0f6a6571e829b349411c5fac93caf5e"

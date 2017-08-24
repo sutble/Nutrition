@@ -6,48 +6,50 @@ provides-nominal:
 provides-member:
 - ["C6Charts31YAxisRendererHorizontalBarChart", ""]
 provides-dynamic-lookup:
-- "renderAxisLine"
 - "renderAxisLabels"
-- "drawGridLine"
-- "gridClippingRect"
-- "drawZeroLine"
+- "drawYLabels"
 - "renderLimitLines"
+- "renderAxisLine"
+- "transformedPositions"
+- "drawZeroLine"
 - "computeAxis"
+- "gridClippingRect"
+- "drawGridLine"
 depends-top-level:
-- "YAxisRendererHorizontalBarChart"
-- !private "CGPathDrawingMode"
-- "CGRect"
-- !private "!="
-- "CGPoint"
-- "Transformer"
-- "Double"
-- !private "&&"
-- !private "NSForegroundColorAttributeName"
-- !private "/"
 - !private "||"
-- !private ">="
-- !private "Dictionary"
-- !private "+="
-- "CGContext"
-- !private "NSFontAttributeName"
-- !private "-"
 - "ViewPortHandler"
-- "CGFloat"
-- !private "-="
-- !private "..<"
-- !private "!"
-- !private "<="
-- "CastingPrecedence"
-- "YAxisRenderer"
-- "Bool"
-- "AssignmentPrecedence"
-- !private "=="
+- !private "!="
+- "Double"
+- "YAxisRendererHorizontalBarChart"
+- "CGRect"
 - "YAxis"
-- !private "+"
+- !private "Dictionary"
+- !private "!"
+- !private "/"
+- !private "NSForegroundColorAttributeName"
+- "YAxisRenderer"
+- "Transformer"
+- "CGFloat"
+- "AssignmentPrecedence"
 - !private "??"
-- !private "ChartUtils"
-- !private "stride"
+- "Bool"
+- !private "=="
+- !private "-="
+- "CastingPrecedence"
+- !private "+="
+- !private "+"
+- !private "CGPathDrawingMode"
+- !private "-"
+- !private ">="
 - !private ">"
+- !private "NSFontAttributeName"
+- !private "<="
+- !private "stride"
+- "CGContext"
+- !private "&&"
+- !private "ChartUtils"
+- "CGPoint"
+- !private "..<"
 - !private "Array"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -495,7 +497,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "renderLimitLines"]
 - !private ["Ps28CustomDebugStringConvertible", "reserveCapacity"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "stride"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "transformedPositions"]
@@ -549,7 +550,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "origin"]
 - !private ["Ps17CustomReflectable", "reserveCapacity"]
 - !private ["Ps17CustomReflectable", "size"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps17CustomReflectable", "x"]
@@ -772,7 +772,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
 - !private ["Ps26ExpressibleByStringLiteral", "characters"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "characters"]
@@ -1099,7 +1098,6 @@ depends-member:
 - !private ["OSC15NSTextAlignment", "left"]
 - !private ["OSC15NSTextAlignment", "right"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1472,11 +1470,18 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "applying"]
 - !private ["Ps21_ObjectiveCBridgeable", "characters"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "origin"]
 - !private ["Ps21_ObjectiveCBridgeable", "reserveCapacity"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
+- !private ["Ps21_ObjectiveCBridgeable", "zero"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -1529,7 +1534,6 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1606,14 +1610,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "922520683e067df9da6cc4a46d85718f"

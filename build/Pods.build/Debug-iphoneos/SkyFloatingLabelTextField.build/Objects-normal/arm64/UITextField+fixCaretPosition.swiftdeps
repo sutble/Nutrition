@@ -1,0 +1,203 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo11UITextField", ""]
+- ["CSo11UITextField", "fixCaretPosition"]
+provides-dynamic-lookup:
+- "fixCaretPosition"
+depends-top-level:
+- "UITextField"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "beginningOfDocument"]
+- !private ["Ps9AnyObject", "endOfDocument"]
+- ["Ps9AnyObject", "fixCaretPosition"]
+- !private ["Ps9AnyObject", "selectedTextRange"]
+- !private ["Ps9AnyObject", "textRange"]
+- !private ["PSo15CALayerDelegate", "beginningOfDocument"]
+- !private ["PSo15CALayerDelegate", "endOfDocument"]
+- ["PSo15CALayerDelegate", "fixCaretPosition"]
+- !private ["PSo15CALayerDelegate", "selectedTextRange"]
+- !private ["PSo15CALayerDelegate", "textRange"]
+- !private ["Ps7CVarArg", "beginningOfDocument"]
+- !private ["Ps7CVarArg", "endOfDocument"]
+- ["Ps7CVarArg", "fixCaretPosition"]
+- !private ["Ps7CVarArg", "selectedTextRange"]
+- !private ["Ps7CVarArg", "textRange"]
+- !private ["Ps28CustomDebugStringConvertible", "beginningOfDocument"]
+- !private ["Ps28CustomDebugStringConvertible", "endOfDocument"]
+- ["Ps28CustomDebugStringConvertible", "fixCaretPosition"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedTextRange"]
+- !private ["Ps28CustomDebugStringConvertible", "textRange"]
+- !private ["Ps23CustomStringConvertible", "beginningOfDocument"]
+- !private ["Ps23CustomStringConvertible", "endOfDocument"]
+- ["Ps23CustomStringConvertible", "fixCaretPosition"]
+- !private ["Ps23CustomStringConvertible", "selectedTextRange"]
+- !private ["Ps23CustomStringConvertible", "textRange"]
+- !private ["Ps9Equatable", "beginningOfDocument"]
+- !private ["Ps9Equatable", "endOfDocument"]
+- ["Ps9Equatable", "fixCaretPosition"]
+- !private ["Ps9Equatable", "selectedTextRange"]
+- !private ["Ps9Equatable", "textRange"]
+- !private ["Ps8Hashable", "beginningOfDocument"]
+- !private ["Ps8Hashable", "endOfDocument"]
+- ["Ps8Hashable", "fixCaretPosition"]
+- !private ["Ps8Hashable", "selectedTextRange"]
+- !private ["Ps8Hashable", "textRange"]
+- !private ["PSo8NSCoding", "beginningOfDocument"]
+- !private ["PSo8NSCoding", "endOfDocument"]
+- ["PSo8NSCoding", "fixCaretPosition"]
+- !private ["PSo8NSCoding", "selectedTextRange"]
+- !private ["PSo8NSCoding", "textRange"]
+- !private ["CSo8NSObject", "beginningOfDocument"]
+- !private ["CSo8NSObject", "endOfDocument"]
+- ["CSo8NSObject", "fixCaretPosition"]
+- !private ["CSo8NSObject", "selectedTextRange"]
+- !private ["CSo8NSObject", "textRange"]
+- !private ["PSo16NSObjectProtocol", "beginningOfDocument"]
+- !private ["PSo16NSObjectProtocol", "endOfDocument"]
+- ["PSo16NSObjectProtocol", "fixCaretPosition"]
+- !private ["PSo16NSObjectProtocol", "selectedTextRange"]
+- !private ["PSo16NSObjectProtocol", "textRange"]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "beginningOfDocument"]
+- !private ["PSo29UIAccessibilityIdentification", "endOfDocument"]
+- ["PSo29UIAccessibilityIdentification", "fixCaretPosition"]
+- !private ["PSo29UIAccessibilityIdentification", "selectedTextRange"]
+- !private ["PSo29UIAccessibilityIdentification", "textRange"]
+- !private ["PSo12UIAppearance", "beginningOfDocument"]
+- !private ["PSo12UIAppearance", "endOfDocument"]
+- ["PSo12UIAppearance", "fixCaretPosition"]
+- !private ["PSo12UIAppearance", "selectedTextRange"]
+- !private ["PSo12UIAppearance", "textRange"]
+- !private ["PSo21UIAppearanceContainer", "beginningOfDocument"]
+- !private ["PSo21UIAppearanceContainer", "endOfDocument"]
+- ["PSo21UIAppearanceContainer", "fixCaretPosition"]
+- !private ["PSo21UIAppearanceContainer", "selectedTextRange"]
+- !private ["PSo21UIAppearanceContainer", "textRange"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "beginningOfDocument"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "endOfDocument"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "selectedTextRange"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textRange"]
+- !private ["CSo9UIControl", "beginningOfDocument"]
+- !private ["CSo9UIControl", "endOfDocument"]
+- ["CSo9UIControl", "fixCaretPosition"]
+- !private ["CSo9UIControl", "selectedTextRange"]
+- !private ["CSo9UIControl", "textRange"]
+- !private ["PSo17UICoordinateSpace", "beginningOfDocument"]
+- !private ["PSo17UICoordinateSpace", "endOfDocument"]
+- ["PSo17UICoordinateSpace", "fixCaretPosition"]
+- !private ["PSo17UICoordinateSpace", "selectedTextRange"]
+- !private ["PSo17UICoordinateSpace", "textRange"]
+- !private ["PSo13UIDynamicItem", "beginningOfDocument"]
+- !private ["PSo13UIDynamicItem", "endOfDocument"]
+- ["PSo13UIDynamicItem", "fixCaretPosition"]
+- !private ["PSo13UIDynamicItem", "selectedTextRange"]
+- !private ["PSo13UIDynamicItem", "textRange"]
+- !private ["PSo18UIFocusEnvironment", "beginningOfDocument"]
+- !private ["PSo18UIFocusEnvironment", "endOfDocument"]
+- ["PSo18UIFocusEnvironment", "fixCaretPosition"]
+- !private ["PSo18UIFocusEnvironment", "selectedTextRange"]
+- !private ["PSo18UIFocusEnvironment", "textRange"]
+- !private ["PSo11UIFocusItem", "beginningOfDocument"]
+- !private ["PSo11UIFocusItem", "endOfDocument"]
+- ["PSo11UIFocusItem", "fixCaretPosition"]
+- !private ["PSo11UIFocusItem", "selectedTextRange"]
+- !private ["PSo11UIFocusItem", "textRange"]
+- !private ["PSo10UIKeyInput", "beginningOfDocument"]
+- !private ["PSo10UIKeyInput", "endOfDocument"]
+- !private ["PSo10UIKeyInput", "selectedTextRange"]
+- !private ["PSo10UIKeyInput", "textRange"]
+- !private ["CSo11UIResponder", "beginningOfDocument"]
+- !private ["CSo11UIResponder", "endOfDocument"]
+- ["CSo11UIResponder", "fixCaretPosition"]
+- !private ["CSo11UIResponder", "selectedTextRange"]
+- !private ["CSo11UIResponder", "textRange"]
+- !private ["PSo30UIResponderStandardEditActions", "beginningOfDocument"]
+- !private ["PSo30UIResponderStandardEditActions", "endOfDocument"]
+- ["PSo30UIResponderStandardEditActions", "fixCaretPosition"]
+- !private ["PSo30UIResponderStandardEditActions", "selectedTextRange"]
+- !private ["PSo30UIResponderStandardEditActions", "textRange"]
+- !private ["CSo11UITextField", "beginningOfDocument"]
+- ["CSo11UITextField", "deinit"]
+- !private ["CSo11UITextField", "endOfDocument"]
+- ["CSo11UITextField", "fixCaretPosition"]
+- !private ["CSo11UITextField", "selectedTextRange"]
+- !private ["CSo11UITextField", "textRange"]
+- !private ["PSo11UITextInput", "beginningOfDocument"]
+- !private ["PSo11UITextInput", "endOfDocument"]
+- !private ["PSo11UITextInput", "selectedTextRange"]
+- !private ["PSo11UITextInput", "textRange"]
+- !private ["PSo17UITextInputTraits", "beginningOfDocument"]
+- !private ["PSo17UITextInputTraits", "endOfDocument"]
+- !private ["PSo17UITextInputTraits", "selectedTextRange"]
+- !private ["PSo17UITextInputTraits", "textRange"]
+- ["CSo14UITextPosition", "deinit"]
+- !private ["PSo18UITraitEnvironment", "beginningOfDocument"]
+- !private ["PSo18UITraitEnvironment", "endOfDocument"]
+- ["PSo18UITraitEnvironment", "fixCaretPosition"]
+- !private ["PSo18UITraitEnvironment", "selectedTextRange"]
+- !private ["PSo18UITraitEnvironment", "textRange"]
+- !private ["CSo6UIView", "beginningOfDocument"]
+- !private ["CSo6UIView", "endOfDocument"]
+- ["CSo6UIView", "fixCaretPosition"]
+- !private ["CSo6UIView", "selectedTextRange"]
+- !private ["CSo6UIView", "textRange"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "beginningOfDocument"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endOfDocument"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "fixCaretPosition"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "selectedTextRange"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textRange"]
+- !private ["Ps9_Hashable", "beginningOfDocument"]
+- !private ["Ps9_Hashable", "endOfDocument"]
+- ["Ps9_Hashable", "fixCaretPosition"]
+- !private ["Ps9_Hashable", "selectedTextRange"]
+- !private ["Ps9_Hashable", "textRange"]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "CSo14UITextPosition"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/SkyFloatingLabelTextField.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "39397b5d9f66e5c878afb29879c62d8d"

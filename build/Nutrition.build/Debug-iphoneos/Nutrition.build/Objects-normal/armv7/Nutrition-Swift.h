@@ -111,42 +111,77 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import Charts;
-@import CoreGraphics;
-@import ObjectiveC;
 @import Foundation;
+@import CoreGraphics;
+@import Charts;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class FIRDatabaseReference;
 @class NSUserDefaults;
-@class UISearchController;
-@class UITextField;
+@class foodSearchController;
+@class SkyFloatingLabelTextField;
+@class UIButton;
+@class UIAlertController;
+@class FoodItem;
+@class UITableView;
+@class UITableViewCell;
+@class UIColor;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9Nutrition17AddViewController")
-@interface AddViewController : UIViewController
-@property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
+@interface AddViewController : UIViewController <UIBarPositioningDelegate, UITableViewDataSource, UISearchBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 @property (nonatomic, strong) NSUserDefaults * _Nullable defaults;
-@property (nonatomic, strong) UISearchController * _Null_unspecified resultSearchController;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified proteinText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified carbsText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fatText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified caloriesText;
+@property (nonatomic, strong) foodSearchController * _Null_unspecified customSearchController;
+@property (nonatomic, strong) SkyFloatingLabelTextField * _Null_unspecified nameText;
+@property (nonatomic, strong) SkyFloatingLabelTextField * _Null_unspecified proteinText;
+@property (nonatomic, strong) SkyFloatingLabelTextField * _Null_unspecified carbsText;
+@property (nonatomic, strong) SkyFloatingLabelTextField * _Null_unspecified fatText;
+@property (nonatomic, strong) SkyFloatingLabelTextField * _Null_unspecified caloriesText;
+@property (nonatomic, strong) UIButton * _Nonnull addButton;
+@property (nonatomic, readonly, strong) UIAlertController * _Nonnull alertController;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified uglyTableView;
+@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull foodArray;
+@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull filteredArray;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull mainDict;
 - (void)viewDidLoad;
-- (IBAction)updateToFB:(id _Nonnull)sender;
-- (void)setDefaults;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)updateToFB;
 - (void)startTheDayRight;
 - (void)addFood;
-- (NSString * _Nonnull)stringDate;
-- (void)setDecimalPad;
-- (void)tapDismiss;
-- (void)setupSearchController;
+- (void)populateTableView;
+- (void)addFoodtoDBWithFoodName:(NSString * _Nonnull)foodName;
+- (void)configureCustomSearchController;
+- (void)didStartSearching;
+- (void)didTapOnSearchButton;
+- (void)didTapOnCancelButton;
+- (void)didChangeSearchTextWithSearchText:(NSString * _Nonnull)searchText;
+- (void)deactivateSearch;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)showTableView;
+- (void)hideTableView;
+- (void)setTextFields;
+- (SkyFloatingLabelTextField * _Nonnull)makeTextFieldWithPlaceholder:(NSString * _Nonnull)placeholder title:(NSString * _Nonnull)title y:(CGFloat)y;
 - (void)clearTextfield;
+- (void)setDecimalPad;
+- (void)hideTextField;
+- (void)showTextField;
+- (void)setupButton;
+- (void)addFunc;
+- (void)animateButton;
+- (void)successHaptic;
+- (NSString * _Nonnull)stringDate;
+- (void)tapDismiss;
 - (void)dismissKeyboard;
+- (void)makeBackgroundColorWithColor:(UIColor * _Nonnull)color;
+- (void)colorReference;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -166,34 +201,51 @@ SWIFT_CLASS("_TtC9Nutrition11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class UIColor;
 @class PieChartView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC9Nutrition19ChartViewController")
 @interface ChartViewController : UIViewController <ChartViewDelegate>
 @property (nonatomic, weak) IBOutlet PieChartView * _Null_unspecified pieChart;
-@property (nonatomic, strong) UIButton * _Nonnull updateButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
 @property (nonatomic, strong) UIButton * _Nonnull resetButton;
 @property (nonatomic, strong) UIButton * _Nonnull feelingButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 - (void)viewDidLoad;
-- (void)dismissKeyboard;
-- (void)updateFunc;
+- (void)setupTitle;
+- (void)updateFromFB;
+- (void)pformatterStuff;
+- (void)drawKeyWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos name:(NSString * _Nonnull)name;
+- (void)drawLabelWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos name:(NSString * _Nonnull)name;
+- (void)drawCenterXWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos;
+- (void)setDescriptionWithText:(NSString * _Nonnull)text;
+- (void)setCalorieStringWithColor:(UIColor * _Nonnull)color;
 - (void)resetFunc;
 - (void)feelingFunc;
+- (NSString * _Nonnull)stringDate;
 - (void)successHaptic;
 - (void)findFontNames;
-- (NSArray<NSNumber *> * _Nonnull)setMacroValsWithProtein:(double)protein carbs:(double)carbs fat:(double)fat;
-- (void)setMacroLabels;
-- (void)drawKeyWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
-- (void)drawLabelWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos i:(NSInteger)i;
-- (void)drawCenterXWithXPos:(CGFloat)xPos yPos:(CGFloat)yPos;
-- (void)setChartWithVals:(NSArray<NSNumber *> * _Nonnull)vals calories:(NSInteger)calories;
-- (void)pformatterStuff;
-- (NSArray<UIColor *> * _Nonnull)setColors;
-- (void)setCenterWithCalories:(NSInteger)calories;
-- (void)setDescriptionWithText:(NSString * _Nonnull)text;
+- (void)tapDismiss;
+- (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9Nutrition19CustomTableViewCell")
+@interface CustomTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified calorieLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified proteinLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified carbsLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fatLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)highlightWithMacros:(NSArray<NSNumber *> * _Nonnull)macros significant:(NSArray<NSNumber *> * _Nonnull)significant;
+- (void)setHighlightWithLabel:(UILabel * _Nonnull)label color:(UIColor * _Nonnull)color;
+- (void)reset;
+- (void)setResetWithLabel:(UILabel * _Nonnull)label;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -205,27 +257,54 @@ SWIFT_CLASS("_TtC9Nutrition8FoodItem")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
+@class UITextView;
 
-SWIFT_CLASS("_TtC9Nutrition14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull mainDict;
-@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull foodArray;
-@property (nonatomic, copy) NSArray<FoodItem *> * _Nonnull filteredArray;
+SWIFT_CLASS("_TtC9Nutrition18TextViewController")
+@interface TextViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified foodLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified foodText;
+@property (nonatomic, strong) UIButton * _Nonnull resetButton;
 - (void)viewDidLoad;
-- (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)populateTableView;
-- (NSString * _Nonnull)stringDate;
-- (void)populateDummyData;
-- (void)addFoodtoDBWithFoodName:(NSString * _Nonnull)foodName;
+- (void)setupButton;
+- (void)resetFunc;
+- (void)animateButton;
+- (void)successHaptic;
+- (void)setupLabel;
+- (void)setupView;
+- (void)tapDismiss;
+- (void)dismissKeyboard;
+- (void)findFontNames;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIFont;
+
+SWIFT_CLASS("_TtC9Nutrition13foodSearchBar")
+@interface foodSearchBar : UISearchBar
+@property (nonatomic, strong) UIFont * _Null_unspecified preferredFont;
+@property (nonatomic, strong) UIColor * _Null_unspecified preferredTextColor;
+- (nonnull instancetype)initWithFrame:(CGRect)frame font:(UIFont * _Nonnull)font textColor:(UIColor * _Nonnull)textColor OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Nutrition20foodSearchController")
+@interface foodSearchController : UISearchController <UIBarPositioningDelegate, UISearchBarDelegate>
+@property (nonatomic, strong) foodSearchBar * _Null_unspecified foodSearch;
+- (nonnull instancetype)initWithSearchResultsController:(UIViewController * _Null_unspecified)searchResultsController searchBarFrame:(CGRect)searchBarFrame searchBarFont:(UIFont * _Nonnull)searchBarFont searchBarTextColor:(UIColor * _Nonnull)searchBarTextColor searchBarTintColor:(UIColor * _Nonnull)searchBarTintColor OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (void)configureSearchBarWithFrame:(CGRect)frame font:(UIFont * _Nonnull)font textColor:(UIColor * _Nonnull)textColor bgColor:(UIColor * _Nonnull)bgColor;
+- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithSearchResultsController:(UIViewController * _Nullable)searchResultsController SWIFT_UNAVAILABLE;
 @end
 
 #pragma clang diagnostic pop

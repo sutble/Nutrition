@@ -1,0 +1,14 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "4ba5994ecc19fd4b811b1e66a210e8e5"
+build_time: [536932989, 55351000]
+inputs:
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [536932781, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [536932781, 0]

@@ -7,52 +7,52 @@ provides-member:
 - ["C6Charts18RadarChartRenderer", ""]
 provides-dynamic-lookup:
 - "drawWeb"
-- "drawHighlighted"
-- "drawDataSet"
-- "drawExtras"
-- "drawHighlightCircle"
 - "drawData"
 - "drawValues"
+- "drawDataSet"
+- "drawExtras"
 - "chart"
+- "drawHighlighted"
+- "drawHighlightCircle"
 depends-top-level:
-- !private "!"
-- !private "*"
-- !private "Double"
-- "CGFloat"
-- !private "&&"
-- !private "CGRect"
-- "IRadarChartDataSet"
-- !private "Dictionary"
-- !private "||"
-- "Highlight"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "Animator"
-- !private "CGMutablePath"
-- !private "=="
-- !private "??"
-- "NSUIColor"
-- "CGPoint"
-- !private "!="
 - !private "NSForegroundColorAttributeName"
-- !private "..<"
-- !private ">"
-- !private "+"
+- !private "-"
+- !private "BooleanLiteralType"
+- !private "ChartUtils"
+- "CGFloat"
+- !private "Double"
+- !private "!"
+- "ViewPortHandler"
+- !private "CGMutablePath"
+- !private "*"
+- !private "RadarChartDataEntry"
+- !private "Array"
+- !private "<"
+- !private "||"
+- "CGContext"
+- "IRadarChartDataSet"
+- !private "stride"
+- !private "&&"
 - "RadarChartRenderer"
 - !private "StringLiteralType"
-- !private "ChartUtils"
-- "CGContext"
-- !private "<"
-- !private "NSFontAttributeName"
+- "NSUIColor"
+- !private "..<"
+- !private "CGRect"
+- !private "!="
+- "AssignmentPrecedence"
+- "CGPoint"
 - "RadarChartView"
+- "Animator"
+- "Highlight"
+- "CastingPrecedence"
+- !private "Dictionary"
+- !private "NSFontAttributeName"
+- !private "??"
+- !private "+"
 - !private "RadarChartData"
+- !private ">"
 - "Int"
-- !private "RadarChartDataEntry"
-- !private "stride"
-- !private "Array"
-- !private "BooleanLiteralType"
-- "ViewPortHandler"
-- !private "-"
+- !private "=="
 - "LineRadarRenderer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -479,7 +479,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "shouldDrawValues"]
 - !private ["Ps28CustomDebugStringConvertible", "skipWebLineCount"]
 - !private ["Ps28CustomDebugStringConvertible", "sliceAngle"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "stride"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
@@ -515,7 +514,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "isNaN"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "x"]
 - !private ["Ps17CustomReflectable", "y"]
@@ -740,7 +738,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "isNaN"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["C6Charts4Fill", "deinit"]
@@ -1055,7 +1052,6 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["V10Foundation11Measurement", "deinit"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
@@ -1244,7 +1240,6 @@ depends-member:
 - !private ["C6Charts8NSUIView", "yRange"]
 - ["Os5Never", "deinit"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["C6Charts21PieRadarChartViewBase", "centerOffsets"]
 - !private ["C6Charts21PieRadarChartViewBase", "chartYMin"]
 - !private ["C6Charts21PieRadarChartViewBase", "data"]
@@ -1761,6 +1756,8 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isNaN"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -1824,7 +1821,6 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "C6Charts4Fill"
@@ -1853,7 +1849,6 @@ depends-nominal:
 - "C6Charts17LineRadarRenderer"
 - "C6Charts30LineScatterCandleRadarRenderer"
 - !private "Ps25LosslessStringConvertible"
-- !private "V10Foundation11Measurement"
 - !private "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
@@ -1934,14 +1929,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "c9d5caeb2b61260d36d47b8717d6fd07"

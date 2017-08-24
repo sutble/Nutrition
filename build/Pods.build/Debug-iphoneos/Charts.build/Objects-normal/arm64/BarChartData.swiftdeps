@@ -7,30 +7,30 @@ provides-member:
 - ["C6Charts12BarChartData", ""]
 provides-dynamic-lookup:
 - "groupBars"
-- "groupWidth"
 - "barWidth"
+- "groupWidth"
 depends-top-level:
-- !private ">"
-- "Double"
-- !private "stride"
-- "BarChartData"
-- !private "+="
-- !private "print"
-- !private "IBarChartDataSet"
-- "IChartDataSet"
-- "CastingPrecedence"
 - !private "<="
-- "BarLineScatterCandleBubbleChartData"
-- "AssignmentPrecedence"
-- !private "/"
-- !private "*"
+- "Double"
 - !private "UnicodeScalarType"
-- !private "-"
-- !private "StringLiteralType"
-- !private "<"
-- !private "??"
-- !private "||"
 - !private "+"
+- !private "StringLiteralType"
+- !private "??"
+- !private "print"
+- !private "+="
+- !private "stride"
+- "CastingPrecedence"
+- !private ">"
+- !private "-"
+- "BarChartData"
+- !private "/"
+- "AssignmentPrecedence"
+- "IChartDataSet"
+- !private "<"
+- !private "*"
+- "BarLineScatterCandleBubbleChartData"
+- !private "IBarChartDataSet"
+- !private "||"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "Double"]
@@ -146,7 +146,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "maxEntryCountSet"]
 - !private ["Ps28CustomDebugStringConvertible", "notifyDataChanged"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "stride"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -164,7 +163,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "count"]
 - ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
@@ -214,7 +212,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -308,7 +305,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
@@ -438,7 +434,6 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -501,14 +496,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "30a36cf40cebe2b9115b69427acdde22"

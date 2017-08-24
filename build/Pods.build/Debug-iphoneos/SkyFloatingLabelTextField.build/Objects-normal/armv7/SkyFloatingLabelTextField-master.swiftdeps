@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "f8cacc845d5919813ca721dbd13c5838"
+build_time: [537254144, 574544000]
+inputs:
+  "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/SkyFloatingLabelTextField/Sources/SkyFloatingLabelTextField.swift": [536970281, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/SkyFloatingLabelTextField/Sources/SkyFloatingLabelTextFieldWithIcon.swift": [536934694, 0]
+  "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/SkyFloatingLabelTextField/Sources/UITextField+fixCaretPosition.swift": [536934694, 0]

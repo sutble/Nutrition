@@ -6,91 +6,91 @@ provides-nominal:
 provides-member:
 - ["C6Charts9ChartData", ""]
 provides-dynamic-lookup:
-- "getDataSetByIndex"
-- "setDrawValues"
-- "xMin"
-- "_leftAxisMax"
-- "_dataSets"
-- "getYMax"
-- "getDataSetIndexByLabel"
-- "_xMax"
-- "getDataSetForEntry"
-- "removeDataSet"
-- "getDataSetByLabel"
-- "removeDataSetByIndex"
-- "initialize"
-- "isHighlightEnabled"
-- "clearValues"
-- "calcMinMax"
-- "calcMinMax"
-- "calcMinMax"
-- "xMax"
-- "_leftAxisMin"
-- "notifyDataChanged"
-- "yMax"
-- "getYMin"
-- "addDataSet"
-- "_yMin"
-- "yMin"
-- "setValueFont"
-- "getColors"
-- "entryCount"
-- "_rightAxisMax"
-- "entryForHighlight"
-- "setValueFormatter"
-- "getFirstLeft"
-- "setValueTextColor"
-- "calcMinMaxY"
-- "dataSetLabels"
-- "contains"
-- "getFirstRight"
-- "maxEntryCountSet"
-- "_xMin"
 - "_rightAxisMin"
-- "dataSetCount"
-- "indexOfDataSet"
-- "highlightEnabled"
+- "initialize"
+- "yMax"
 - "addEntry"
+- "isHighlightEnabled"
+- "contains"
 - "removeEntry"
 - "removeEntry"
-- "_yMax"
+- "yMin"
+- "removeDataSetByIndex"
+- "removeDataSet"
+- "getDataSetForEntry"
+- "_dataSets"
+- "getDataSetIndexByLabel"
+- "indexOfDataSet"
+- "getFirstRight"
+- "getFirstLeft"
+- "dataSetLabels"
+- "getColors"
+- "dataSetCount"
+- "_leftAxisMax"
+- "clearValues"
+- "getDataSetByIndex"
+- "addDataSet"
+- "entryCount"
+- "setDrawValues"
+- "highlightEnabled"
+- "entryForHighlight"
+- "getYMax"
+- "calcMinMaxY"
+- "_leftAxisMin"
+- "calcMinMax"
+- "calcMinMax"
+- "calcMinMax"
 - "dataSets"
+- "_yMax"
+- "xMax"
+- "setValueFont"
+- "getDataSetByLabel"
+- "_xMax"
+- "_yMin"
+- "_rightAxisMax"
+- "setValueFormatter"
+- "setValueTextColor"
+- "_xMin"
+- "maxEntryCountSet"
+- "notifyDataChanged"
+- "getYMin"
+- "xMin"
 depends-top-level:
-- "ChartDataEntry"
-- !private "!=="
-- !private "&&"
-- !private ">"
-- "TernaryPrecedence"
-- "-"
-- !private "||"
-- !private "!"
-- "ChartData"
-- "AssignmentPrecedence"
-- !private "=="
-- !private ">="
-- !private "UnicodeScalarType"
-- !private "==="
-- "Bool"
-- "NSUIColor"
 - "NSObject"
-- "Highlight"
-- !private "StringLiteralType"
-- "YAxis"
-- !private "<"
+- !private "&&"
 - !private "ComparisonResult"
-- !private "..<"
-- !private "+="
-- !private "Array"
-- !private "print"
+- !private "BooleanLiteralType"
+- !private "||"
+- !private "<"
+- "ChartDataEntry"
+- !private ">"
+- "YAxis"
+- "Bool"
 - "DBL_MAX"
 - "IChartDataSet"
+- "ChartData"
+- !private "==="
+- !private "StringLiteralType"
+- !private "Array"
+- !private ">="
+- "Double"
+- "String"
+- "NSUIColor"
+- "IValueFormatter"
+- !private "..<"
+- !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- "-"
+- !private "!=="
+- !private "=="
+- !private "!"
+- !private "+="
+- "TernaryPrecedence"
 - "NSUIFont"
+- "Highlight"
 - "Int"
 - !private "??"
-- "Double"
-- "IValueFormatter"
-- "String"
-- !private "BooleanLiteralType"
+- !private "print"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "nan"]
 - ["Ps9AnyObject", "AxisDependency"]
@@ -442,7 +442,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setValueFont"]
 - ["Ps28CustomDebugStringConvertible", "setValueFormatter"]
 - ["Ps28CustomDebugStringConvertible", "setValueTextColor"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - ["Ps28CustomDebugStringConvertible", "xMax"]
@@ -475,7 +474,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "nan"]
 - !private ["Ps17CustomReflectable", "remove"]
 - !private ["Ps17CustomReflectable", "removeAll"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - ["Ps23CustomStringConvertible", "AxisDependency"]
 - !private ["Ps23CustomStringConvertible", "ComparisonResult"]
@@ -656,7 +654,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "nan"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "caseInsensitiveCompare"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "caseInsensitiveCompare"]
@@ -967,7 +964,6 @@ depends-member:
 - !private ["CSo8NSString", "caseInsensitiveCompare"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1248,7 +1244,6 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1318,14 +1313,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
-- "/Users/adityagarg/Code/Mobile-App/IOS/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/adityagarg/Code/Mobile-App/IOS/The-Game/Nutrition/build/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "8c095d3b03bc6b4ba4eea0621e718130"

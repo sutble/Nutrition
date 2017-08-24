@@ -4,6 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Science Fair Light Italic.otf</string>
+		<string>Science Fair Light.otf</string>
+		<string>Science Fair.otf</string>
+		<string>Science Fair Italic.otf</string>
 		<string>SubwayLogo.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

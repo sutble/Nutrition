@@ -9,4 +9,5 @@ target 'Nutrition' do
   pod 'Firebase/Database'
   pod 'Firebase/Core'
   pod 'Charts'
+  pod 'SkyFloatingLabelTextField', '~> 2.0'
 end
